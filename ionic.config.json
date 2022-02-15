@@ -1,0 +1,7 @@
+{
+  "name": "nivest-software",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
