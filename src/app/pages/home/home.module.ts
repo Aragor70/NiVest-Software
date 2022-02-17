@@ -6,6 +6,7 @@ import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
 import { TodoComponent } from 'src/app/components/todo/todo.component';
+import { FancyCardComponent } from 'src/app/components/fancy-card/fancy-card.component';
 
 
 @NgModule({
@@ -15,6 +16,6 @@ import { TodoComponent } from 'src/app/components/todo/todo.component';
     IonicModule,
     HomePageRoutingModule,
   ],
-  declarations: [HomePage, TodoComponent]
+  declarations: [HomePage, TodoComponent, FancyCardComponent]
 })
 export class HomePageModule {}

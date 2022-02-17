@@ -1,0 +1,132 @@
+
+ion-label.fancy-label
+{
+  position: relative;
+  padding: 32px 32px 100px;
+  float: left;
+  border-radius: 50%;
+  width: 100%;
+}
+
+.fancy-card
+{
+  max-height: 100%;
+  width: 200px;
+  height: 230px;
+  position: relative;
+  background-color: #fff;
+  padding: 7.5px;
+  color: #000;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex-direction: column;
+  cursor: pointer;
+
+}
+
+.fancy-label:hover .fancy-card
+{
+  animation: shake 500ms linear;
+  transform: scale(1.15);
+  z-index: 1;
+}
+@keyframes shake {
+  0% {
+    transform: scale(1.15);
+  }
+  25% {
+    transform: scale(1.15) rotate(5deg);
+  }
+  40% {
+    transform: scale(1.15) rotate(-5deg);
+  }
+  50% {
+    transform: scale(1.15) rotate(2deg);
+  }
+  60% {
+    transform: scale(1.15) rotate(-5deg);
+  }
+  75% {
+    transform: scale(1.15) rotate(-2deg);
+  }
+  100% {
+    transform: scale(1.15);
+  }
+}
+
+.fancy-label:hover .fancy-card::before
+{
+  content: '';
+  position: absolute;
+  inset: 0;
+  box-shadow: -64px 64px 170px #000000;
+}
+
+.fancy-label:active .fancy-card::before
+{
+  content: '';
+  position: absolute;
+  inset: 0;
+  box-shadow: 0 0 170px #3dc2ff;
+}
+
+.fancy-subcard
+{
+  position: absolute;
+  max-height: 100%;
+  width: max-content;
+  
+  width: 0;
+  height: 0;
+  transform: translateX(0);
+
+  transition: all 250ms ease;
+  transition-delay: 150ms;
+  z-index: 10;
+}
+
+.fancy-label:hover .fancy-subcard
+{
+  width: 72px;
+  height: 72px;
+}
+
+.fancy-card hr
+{
+  width: 100%;
+  border: none;
+  border-bottom: 3px solid #ffc409;
+}
+.fancy-card ion-text
+{
+  padding: 0 15px;
+  font-weight: 900;
+  font-size: 1em;
+  line-height: 1.8;
+}
+
+
+
+
+.fancy-label:hover .fancy-subcard:nth-of-type(1)
+{
+  transform: translate(-210%, 10px) rotate(7.5deg); 
+}
+.fancy-label:hover .fancy-subcard:nth-of-type(2)
+{
+  transform: translate(-126px, 124px) rotate(-15deg); 
+}
+.fancy-label:hover .fancy-subcard:nth-of-type(3)
+{ 
+  transform: translate(5px, 148px) rotate(7.5deg); 
+}
+.fancy-label:hover .fancy-subcard:nth-of-type(4)
+{ 
+  transform: translate(145%, 98px) rotate(-15deg); 
+}
+.fancy-label:hover .fancy-subcard:nth-of-type(5)
+{ 
+  transform: translate(205%) rotate(15deg); 
+}

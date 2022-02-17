@@ -1,26 +1,75 @@
+
+
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
+    <ion-item>
+
+    </ion-item>
 </ion-header>
 
 <ion-content [fullscreen]="true">
 
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<section class="dashboard">
+  <ion-list class="dashboard__welcome ion-items-vertical-end">
+    <ion-item lines="none">
+      <ion-title class="weight-bold brand-title">
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+        <ion-text color="primary">Ni</ion-text><ion-text color="secondary">Vest Software</ion-text>
 
-  <app-todo></app-todo>
+      </ion-title>
+    </ion-item>
+
+
+    
+  </ion-list>
+</section>
+<section>
+  <ion-item lines="none">
+    <ion-title class="ion-text-center">
+      Discover what you came here for
+    </ion-title>
+  </ion-item>
+</section>
+<section>
+  <ion-list class="fancy-list">
+    
+    <app-fancy-card [title]="'Overview'"></app-fancy-card>
+
+    <app-fancy-card [title]="'Software development'"></app-fancy-card>
+    
+    <app-fancy-card [title]="'Algorithms'"></app-fancy-card>
+    
+    <app-fancy-card [title]="'About us'"></app-fancy-card>
+
+  </ion-list>
+</section>
+
+<section>
+
+  <ion-item lines="none">
+    <ion-title>
+      Overview
+    </ion-title>
+  </ion-item>
+
+
+
+</section>
+
+<section class="ion-items-center">
+  <ion-card>
+    <ion-item>
+      <ion-text>
+        <a href = "mailto: mikey.nivest@gmail.com">mikey.nivest@gmail.com</a>
+      </ion-text>
+    </ion-item>
+  </ion-card>
+</section>
+  
+<ion-footer>
+  <ion-item>
+
+  </ion-item>
+</ion-footer>
   
 </ion-content>
-
 
