@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class FancyCardComponent implements OnInit {
 
-  @Input() title: String;
+  @Input() props: any;
 
   constructor() { }
 

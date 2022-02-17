@@ -17,41 +17,41 @@
 
       </ion-title>
     </ion-item>
+    <ion-item lines="none">
+      <ion-title class="weight-bold">
+
+        <ion-text>We provide solutions to your problems</ion-text>
+
+      </ion-title>
+    </ion-item>
 
 
     
   </ion-list>
 </section>
-<section>
-  <ion-item lines="none">
-    <ion-title class="ion-text-center">
-      Discover what you came here for
+<section class="headline-content ion-items-center">
+    <ion-title>
+      <ion-text>
+        Discover what you came here for
+      </ion-text>
     </ion-title>
-  </ion-item>
 </section>
 <section>
   <ion-list class="fancy-list">
     
-    <app-fancy-card [title]="'Overview'"></app-fancy-card>
-
-    <app-fancy-card [title]="'Software development'"></app-fancy-card>
-    
-    <app-fancy-card [title]="'Algorithms'"></app-fancy-card>
-    
-    <app-fancy-card [title]="'About us'"></app-fancy-card>
+    <app-fancy-card *ngFor="let element of fancyCards" [props]="element"></app-fancy-card>
 
   </ion-list>
 </section>
 
-<section>
-
-  <ion-item lines="none">
-    <ion-title>
+<section class="headline-content ion-items-center">
+  
+  <ion-title>
+    <ion-text>
       Overview
-    </ion-title>
-  </ion-item>
-
-
+    </ion-text>
+    
+  </ion-title>
 
 </section>
 
@@ -64,7 +64,9 @@
     </ion-item>
   </ion-card>
 </section>
-  
+
+
+
 <ion-footer>
   <ion-item>
 

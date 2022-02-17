@@ -1,19 +1,22 @@
 <ion-label class='fancy-label ion-items-center'>
   <ion-card class='fancy-card ion-items-center'>
 
-      <ion-text>
-          {{ title }}
-      </ion-text>
+    <ion-icon name={{props.icon}} class="ion-4x"></ion-icon>
 
-      <hr />
+    <ion-text>
+        {{ props.title }}
+    </ion-text>
+
+    <hr />
       
       
   </ion-card>
+
+
+
+  <ion-label class='fancy-subcard' *ngFor="let url of props.imgs" >
+    <img [src]="url" />
+  </ion-label>
   
-  <img class='fancy-subcard' />
-  <img class='fancy-subcard' />
-  <img class='fancy-subcard' />
-  <img class='fancy-subcard' />
-  <img class='fancy-subcard' />
 
 </ion-label>

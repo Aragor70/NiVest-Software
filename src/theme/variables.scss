@@ -316,6 +316,8 @@ ion-footer
 }
 * {
   box-sizing: border-box;
+  
+  font-family: Verdana, sans-serif;
 }
 
 .fancy-list :nth-of-type(1) .fancy-label .fancy-subcard:nth-of-type(1) {
@@ -323,4 +325,10 @@ ion-footer
 }
 .fancy-list :nth-of-type(4) .fancy-label .fancy-subcard:nth-of-type(5) {
   display: none;
+}
+
+
+.ion-4x {
+  position: relative;
+  font-size: 4em;
 }

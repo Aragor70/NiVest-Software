@@ -4,14 +4,16 @@
 {
   height: calc(100vh - 60px);
   
-
   &__welcome {
-    min-height: 40vh;
+    min-height: 80vh;
   }
 
   ion-title {
     font-size: 2em;
     font-weight: 600;
+    margin-bottom: 1.5em;
+    line-height: 1.6;
+    font-family: Verdana, sans-serif;
   }
 
   .brand-title {
@@ -24,8 +26,17 @@
 {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
-  background-color: #ccc;
+
 }
 
+.headline-content
+{
+  min-height: 20vh;
 
-  
+  ion-text {
+    
+    font-size: 25px;
+    font-weight: 600;
+    font-family: Verdana, sans-serif;
+  }
+}
