@@ -32,7 +32,7 @@ export class HomePage {
       ]
     },
     {
-      title: 'Algorithms',
+      title: 'Algorithms and data structures',
       icon: 'color-filter-outline',
       imgs: [
         '/assets/fancy/logo.png',

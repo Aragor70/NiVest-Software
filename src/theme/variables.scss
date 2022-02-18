@@ -2,6 +2,13 @@
 // http://ionicframework.com/docs/theming/
 
 /** Ionic CSS Variables **/
+
+* {
+  box-sizing: border-box;
+  
+  font-family: Verdana, sans-serif;
+}
+
 :root {
   /** primary **/
   --ion-color-primary: #3880ff;
@@ -235,6 +242,83 @@
   }
 }
 
+
+ion-item
+{
+  --padding-end: 16px!important;
+  --inner-padding-end: 0px;
+  --inner-padding-start: 0px;
+  --ion-safe-area-right: 0;
+  --padding-start: 16px!important;
+}
+ion-list{
+  padding: 0 16px !important; 
+}
+ion-list-header
+{
+  padding: 0 !important; 
+}
+ion-card ion-card
+{
+  margin: 0 !important;
+}
+ion-list ion-list
+{
+  padding: 0 !important;
+}
+ion-card-header ion-title
+{
+  padding: 0 !important;
+}
+ion-router-link
+{
+  cursor: pointer;
+  width: max-content;
+}
+ion-card-content ion-list > ion-item
+{
+  padding: 7.5px 0;
+}
+ion-item
+{
+  padding: 1.5px 0;
+  --padding-end: 0;
+  --padding-start: 0;
+}
+
+ion-card ion-item
+{
+  --padding-end: 0!important;
+  --padding-start: 0!important;
+}
+
+ion-card ion-card
+{
+  width: 100%!important;
+}
+ion-text
+{
+  font-size: 16px;
+  line-height: 1.6
+}
+ion-button:active
+{
+  position: relative;
+  top: 2px;
+  color: #2dd36f!important;
+}
+ion-router-link:active
+{
+  position: relative;
+  top: 2px;
+  color: #3dc2ff;
+}
+
+ion-button
+{
+  padding: 0 13px;
+}
+
 .no-padding
 {
   padding: 0 !important;
@@ -282,6 +366,13 @@
   text-align: center;
 }
 
+.ion-items-wrap
+{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
 a
 {
   color: #3880ff;
@@ -314,17 +405,20 @@ ion-footer
 {
   font-weight: 900;
 }
-* {
-  box-sizing: border-box;
-  
-  font-family: Verdana, sans-serif;
-}
 
 .fancy-list :nth-of-type(1) .fancy-label .fancy-subcard:nth-of-type(1) {
-  display: none;
+
+  @media (min-width: 1023px) {
+    display: none;
+  }
+
 }
 .fancy-list :nth-of-type(4) .fancy-label .fancy-subcard:nth-of-type(5) {
-  display: none;
+  
+  @media (min-width: 1023px) {
+    display: none;
+  }
+  
 }
 
 
@@ -332,3 +426,5 @@ ion-footer
   position: relative;
   font-size: 4em;
 }
+
+

@@ -3,40 +3,89 @@
 .dashboard
 {
   height: calc(100vh - 60px);
+  width: 100%;
   
+  padding: 0 20px;
+
   &__welcome {
     min-height: 80vh;
   }
 
-  ion-title {
-    font-size: 2em;
-    font-weight: 600;
-    margin-bottom: 1.5em;
-    line-height: 1.6;
+  ion-text {
+    width: 100%;
     font-family: Verdana, sans-serif;
+    line-height: 1.6;
+    text-align: left;
+    font-size: 24px;
+
+    @media (min-width: 1023px) {
+
+      font-size: 2em;
+    }
+  }
+  
+  ion-title {
+    width: 100%;
+
+    margin-bottom: 1.5em;
+    padding: 0;
+
+    width: 100%;
+    font-family: Verdana, sans-serif;
+    line-height: 1.6;
+    text-align: justify;
+    
+    font-size: 1.9em;
+
+    @media (min-width: 1023px) {
+
+      font-size: 1.5em;
+    }
   }
 
-  .brand-title {
-    font-size: 3em;
-  }
+  
 
 }
 
 .fancy-list
 {
-  display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
 
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  
+  @media (min-width: 768px) {
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    
+  }  
+  @media (min-width: 1023px) {
+
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    
+  }
 }
 
 .headline-content
 {
   min-height: 20vh;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 0 36px;
 
   ion-text {
     
-    font-size: 25px;
+    font-size: 1.4em;
     font-weight: 600;
     font-family: Verdana, sans-serif;
+
+    @media (min-width: 1023px) {
+
+      font-size: 1.5em;
+    }
   }
 }
