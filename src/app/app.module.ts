@@ -9,6 +9,7 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { StoreModule } from '@ngrx/store';
 import todoReducer from './reducers/todo.reducer';
+import binaryTreeReducer from './reducers/binary-tree.reducer';
 
 
 @NgModule({
@@ -18,7 +19,7 @@ import todoReducer from './reducers/todo.reducer';
     BrowserModule, 
     IonicModule.forRoot(), 
     AppRoutingModule,
-    StoreModule.forRoot({ todo: todoReducer }),
+    StoreModule.forRoot({ tree: binaryTreeReducer }),
   ],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],

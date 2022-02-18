@@ -1,0 +1,10 @@
+
+  <div class="tree__node ion-items-center" [ngStyle]="{'transform': 'translate(' + stylesX + 'px, ' + stylesY + 'px)'}"  >
+
+    {{ props.value }}
+
+
+  </div>
+  
+  <app-tree-node *ngIf="props.left" [stylesX]="stylesX - 72" [stylesY]="stylesY + 72" [level]="level + 1"[props]="props.left"></app-tree-node>
+  <app-tree-node *ngIf="props.right" [stylesX]="stylesX + 72" [stylesY]="stylesY + 72" [level]="level + 1" [props]="props.right"></app-tree-node>
