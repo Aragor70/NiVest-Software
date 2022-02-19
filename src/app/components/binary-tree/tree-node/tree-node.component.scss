@@ -2,12 +2,12 @@
 .tree__node {
     width: 72px;
     height: 72px;
-
-    border-radius: 7.5px;
-
     position: absolute;
+
+    border-radius: 50%;
 
     z-index: 11;
     font-weight: 900;
+    outline: 2px solid #3dc2ff;
 
 }

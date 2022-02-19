@@ -11,8 +11,6 @@ export class TreeNodeComponent implements OnInit {
   @Input() stylesX: any;
   @Input() stylesY: any;
   @Input() level: any;
-  @Input() left: any;
-  @Input() right: any;
 
 
   constructor() {
