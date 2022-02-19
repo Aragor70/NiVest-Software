@@ -1,0 +1,97 @@
+
+.label {
+
+    position: absolute;
+    
+    top: 16px;
+    right: 16px;
+
+    padding: 1px;
+    margin: 0;
+    width: max-content;
+
+    @media (min-width: 1023px) {
+
+        top: 20px;
+        right: 20px;
+    }
+
+
+    ion-label {
+
+        width: 160px;
+        height: 42px;
+        outline: 3px solid #3dc2ff;
+        border-radius: 25px;
+        margin: 0;
+        z-index: 10;
+        background-color: #3dc2ff;
+
+        margin: 2px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.45s;
+        cursor: pointer;
+        width: max-content;
+
+        @media (min-width: 1023px) {
+
+            width: 250px;
+            height: 50px;
+        }
+
+        ion-text {
+            
+            padding: 0 25px;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 13px;
+            color: #fff;
+
+
+
+            @media (min-width: 1023px) {
+
+                font-size: 16px;
+            }
+        }
+
+        
+
+        &:hover {
+
+            @media (min-width: 1023px) {
+
+                width: 200px;
+                outline: 3px solid #3880ff;
+                background: transparent;
+
+                ion-text {
+                    color: #3880ff;
+                }
+            }
+            
+        }
+
+        &:active {
+
+            ion-text {
+            
+                position: relative;
+                top: 2px;
+                color: green;
+    
+            }
+            @media (max-width: 1023px) {
+
+                outline: 3px solid #3880ff;
+            }
+        }
+        
+    }
+
+    
+
+}

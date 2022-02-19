@@ -5,11 +5,16 @@
   height: calc(100vh - 60px);
   width: 100%;
   position: relative;
-  
-  padding: 0 20px;
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
 
   &__welcome {
-    min-height: 80vh;
+    min-height: 30vh;
+    width: max-content;
+    background-color: none;
+    padding: 20px;
+    border-radius: 15px;
   }
 
   ion-text {
@@ -46,6 +51,22 @@
 
   
 
+}
+
+.dashboard {
+  animation: pulse 0.7s ease-in;
+}
+ 
+@keyframes pulse {
+  0% {
+    background-color: #3880ff;
+  }
+  50% {
+    background-color: #3dc2ff;
+  }
+  100% {
+    background-color: #fff;
+  }
 }
 
 .fancy-list
