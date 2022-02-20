@@ -16,6 +16,8 @@ ion-label.fancy-label
     
   }
 
+  
+
 }
 
 .fancy-card
@@ -29,12 +31,14 @@ ion-label.fancy-label
   color: #000;
 
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: flex-end;
   flex-direction: column;
   cursor: pointer;
   z-index: 3;
   aspect-ratio: 1 / 1;
+
+  
 
   ion-icon {
     position: absolute;
@@ -103,6 +107,10 @@ ion-label.fancy-label
   transition: transform 250ms ease;
   transition-delay: 350ms;
   z-index: 1;
+
+  @media (max-width: 1023px) {
+    display: none;
+  }
 }
 
 .fancy-label:hover .fancy-subcard
@@ -123,7 +131,7 @@ ion-label.fancy-label
   border: none;
   border-bottom: 3px solid #ffc409;
 }
-.fancy-card ion-text
+.fancy-card ion-item
 {
   padding: 0 15px;
   font-weight: 900;
