@@ -110,18 +110,20 @@ ion-header {
 
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: column;
   
   @media (min-width: 768px) {
 
     display: grid;
+    align-items: flex-start;
     grid-template-columns: 50% 50%;
     
   }  
   @media (min-width: 1023px) {
 
     display: grid;
+    align-items: flex-start;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 57.5px auto;
   }
