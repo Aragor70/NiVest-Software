@@ -1,4 +1,12 @@
 
+ion-header {
+
+  ion-item {
+    cursor: pointer;
+
+    width: max-content;
+  }
+}
 
 .dashboard
 {
@@ -23,7 +31,7 @@
     div {
       display: none;
     }
-    
+
     @media (min-width: 1023px) {
       ion-label {
         margin: 0;
@@ -42,6 +50,8 @@
         
       }
     }
+    
+
     
   }
 
@@ -138,4 +148,9 @@
       font-size: 1.5em;
     }
   }
+}
+
+.content {
+  width: 100%;
+  min-height: 100vh;
 }
