@@ -19,6 +19,7 @@ export class HomePage {
         '/assets/fancy/logo.png',
         '/assets/fancy/logo.png',
       ],
+      url: '/overview',
       large: false
     },
     {
@@ -31,6 +32,7 @@ export class HomePage {
         '/assets/fancy/logo.png',
         '/assets/fancy/logo.png',
       ],
+      url: '/software_development',
       large: true
     },
     {
@@ -43,6 +45,7 @@ export class HomePage {
         '/assets/fancy/logo.png',
         '/assets/fancy/logo.png',
       ],
+      url: '/algorithms',
       large: true
     },
     {
@@ -55,6 +58,7 @@ export class HomePage {
         '/assets/fancy/logo.png',
         '/assets/fancy/logo.png',
       ],
+      url: '/about_us',
       large: false
     },
 

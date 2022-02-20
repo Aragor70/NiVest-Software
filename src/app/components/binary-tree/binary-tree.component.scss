@@ -7,13 +7,12 @@
 
     position: absolute;
     top: 144px;
-    right: calc(144px);
-
+    right: 144px;
     display: none;
 
     @media (min-width: 1023px) {
 
-        display: none;
+        display: block;
 
     }
     
