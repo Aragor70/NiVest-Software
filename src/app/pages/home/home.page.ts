@@ -18,7 +18,8 @@ export class HomePage {
         '/assets/fancy/logo.png',
         '/assets/fancy/logo.png',
         '/assets/fancy/logo.png',
-      ]
+      ],
+      large: false
     },
     {
       title: 'Software development',
@@ -29,7 +30,8 @@ export class HomePage {
         '/assets/fancy/logo.png',
         '/assets/fancy/logo.png',
         '/assets/fancy/logo.png',
-      ]
+      ],
+      large: true
     },
     {
       title: 'Algorithms and data structures',
@@ -40,7 +42,8 @@ export class HomePage {
         '/assets/fancy/logo.png',
         '/assets/fancy/logo.png',
         '/assets/fancy/logo.png',
-      ]
+      ],
+      large: true
     },
     {
       title: 'About us',
@@ -51,7 +54,8 @@ export class HomePage {
         '/assets/fancy/logo.png',
         '/assets/fancy/logo.png',
         '/assets/fancy/logo.png',
-      ]
+      ],
+      large: false
     },
 
   ]

@@ -1,4 +1,4 @@
-<ion-label class='fancy-label ion-items-center'>
+<ion-label class='fancy-label ion-items-center' [class]="props.large ? 'large' : ''">
   <ion-card class='fancy-card ion-items-center'>
 
     <ion-icon name={{props.icon}} class="ion-4x"></ion-icon>
@@ -8,7 +8,6 @@
     </ion-text>
 
     <hr />
-      
       
   </ion-card>
 

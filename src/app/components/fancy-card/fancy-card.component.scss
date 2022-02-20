@@ -7,6 +7,9 @@ ion-label.fancy-label
   border-radius: 50%;
   width: 100%;
 
+  height: auto;
+
+
   @media (min-width: 1023px) {
 
     padding: 100px 32px 100px;
@@ -31,6 +34,7 @@ ion-label.fancy-label
   flex-direction: column;
   cursor: pointer;
   z-index: 3;
+  aspect-ratio: 1 / 1;
 
   ion-icon {
     position: absolute;
@@ -39,6 +43,7 @@ ion-label.fancy-label
     --ionicon-stroke-width: 16px;
   }
 }
+
 
 .fancy-label:hover .fancy-card
 {
@@ -147,3 +152,26 @@ ion-label.fancy-label
 { 
   transform: translate(205%, 25px) rotate(15deg); 
 }
+
+
+.large:hover > .fancy-subcard:nth-of-type(1)
+{
+  transform: translate(-210%, 63px) rotate(7.5deg); 
+}
+.large:hover > .fancy-subcard:nth-of-type(2)
+{
+  transform: translate(-136px, 174px) rotate(-15deg); 
+}
+.large:hover > .fancy-subcard:nth-of-type(3)
+{ 
+  transform: translate(5px, 188px) rotate(7.5deg); 
+}
+.large:hover > .fancy-subcard:nth-of-type(4)
+{ 
+  transform: translate(185%, 188px) rotate(-15deg); 
+}
+.large:hover > .fancy-subcard:nth-of-type(5)
+{ 
+  transform: translate(205%, 25px) rotate(15deg); 
+}
+

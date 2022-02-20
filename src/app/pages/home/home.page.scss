@@ -87,8 +87,6 @@ ion-header {
     }
   }
 
-  
-
 }
 
 .dashboard {
@@ -111,8 +109,8 @@ ion-header {
 {
 
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
+  align-items: flex-start;
   flex-direction: column;
   
   @media (min-width: 768px) {
@@ -125,7 +123,7 @@ ion-header {
 
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-    
+    grid-template-rows: 57.5px auto;
   }
 }
 
