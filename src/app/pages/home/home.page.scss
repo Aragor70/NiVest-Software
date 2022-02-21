@@ -16,23 +16,37 @@ ion-header {
   display: flex;
   align-items: flex-end;
   padding: 20px;
+  
 
   &__welcome {
-    min-height: 30vh;
     width: max-content;
     background-color: none;
-    padding: 20px;
     border-radius: 15px;
     contain:none;
+    margin-bottom: 20px;
+    padding: 20px !important;
+
+    &:nth-of-type(2) {
+      display: none;
+    }
 
     ion-label {
       display: none;
     }
+
     div {
       display: none;
     }
+    
+    .brand-title {
+      margin-bottom: 20px;
+    }
 
     @media (min-width: 1023px) {
+
+      &:nth-of-type(2) {
+        display: block;
+      }
       ion-label {
         margin: 0;
         padding: 0;
@@ -71,9 +85,8 @@ ion-header {
   ion-title {
     width: 100%;
 
-    margin-bottom: 1.5em;
     padding: 0;
-
+    height: auto;
     width: 100%;
     font-family: Verdana, sans-serif;
     line-height: 1.6;
@@ -135,7 +148,7 @@ ion-header {
   width: 100%;
   box-sizing: border-box;
   text-align: center;
-  padding: 0 36px;
+  padding: 0 20px;
 
   ion-text {
     
