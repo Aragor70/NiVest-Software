@@ -48,13 +48,15 @@ ion-label.fancy-label
   }
 }
 
+  @media (min-width: 1023px) {
 
-.fancy-label:hover .fancy-card
-{
-  animation: shake 500ms linear;
-  transform: scale(1.15);
-  z-index: 3;
-}
+    .fancy-label:hover .fancy-card
+    {
+      animation: shake 500ms linear;
+      transform: scale(1.15);
+      z-index: 3;
+    }
+  }
 @keyframes shake {
   0% {
     transform: scale(1.15);
