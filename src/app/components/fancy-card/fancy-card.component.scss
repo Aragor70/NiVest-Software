@@ -38,13 +38,12 @@ ion-label.fancy-label
   z-index: 3;
   aspect-ratio: 1 / 1;
 
-  
-
   ion-icon {
     position: absolute;
     top: 7.5px;
     right: 7.5px;
     --ionicon-stroke-width: 16px;
+    color:#012169;
   }
 }
 
@@ -86,7 +85,7 @@ ion-label.fancy-label
   content: '';
   position: absolute;
   inset: 0;
-  box-shadow: -64px 64px 170px #000000;
+  box-shadow: -64px 64px 170px #424242;
 }
 
 .fancy-label:active .fancy-card::before
@@ -94,7 +93,7 @@ ion-label.fancy-label
   content: '';
   position: absolute;
   inset: 0;
-  box-shadow: 0 0 170px #3dc2ff;
+  box-shadow: 0 0 170px #012169;
 }
 
 .fancy-subcard

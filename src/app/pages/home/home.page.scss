@@ -22,7 +22,7 @@ ion-header {
     width: max-content;
     background-color: none;
     border-radius: 15px;
-    contain:none;
+    contain: none;
     margin-bottom: 20px;
     padding: 20px !important;
 
@@ -38,6 +38,7 @@ ion-header {
       display: none;
     }
     
+
     .brand-title {
       margin-bottom: 20px;
     }
@@ -111,7 +112,7 @@ ion-header {
     background-color: #3880ff;
   }
   50% {
-    background-color: #3dc2ff;
+    background-color: #012169;
   }
   100% {
     background-color: #fff;
@@ -149,6 +150,7 @@ ion-header {
   box-sizing: border-box;
   text-align: center;
   padding: 0 20px;
+  color: #424242;
 
   ion-text {
     
