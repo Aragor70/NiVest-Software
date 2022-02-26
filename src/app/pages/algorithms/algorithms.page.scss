@@ -8,6 +8,56 @@
     position: relative;
     padding: 20px;
     
+    background-image: url('/assets/british-map.png');
+    background-position: center;
 
 }
 
+ion-header
+{
+
+    contain: none !important;
+    position: relative;
+    
+    div {
+        content: "";
+        position: absolute;
+        width: 265px;
+        height: 265px;
+        background: #fff;
+        top: 50%;
+        transform: translateY(-50%) translateX(0) rotate(45deg);
+        border-radius: 4%;
+        box-shadow: 0 16px 28px 0 rgb(0 0 0 / 22%), 0 25px 55px 0 rgb(0 0 0 / 21%);
+        right: 0;
+        z-index: 11;
+        cursor: pointer;
+
+        @media (max-width: 1023px) {
+            display: none;
+        }
+    
+        &::after {
+            /* background-image: url("/assets/fancy/logo.png"); */
+            width: 50%;
+            height: 50%;
+            text-align: center;
+            content: "NiVest Software";
+            position: absolute;
+            background-size: contain;
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+            bottom: 0;
+            right: 0;
+            transform: translateY(-25px) translateX(-25px) rotate(-45deg);
+
+            line-height: 1.6;
+            font-size: 100%;
+            font-weight: 900;
+        }
+
+    }
+    
+
+}

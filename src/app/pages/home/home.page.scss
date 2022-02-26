@@ -127,6 +127,8 @@ ion-header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
+  display: none;
   
   @media (min-width: 768px) {
 
@@ -169,4 +171,19 @@ ion-header {
 .content {
   width: 100%;
   min-height: 100vh;
+
+}
+
+
+.card-list {
+
+  row-gap: 30px;
+  padding: 20px;
+
+    width: 100vw;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+
 }

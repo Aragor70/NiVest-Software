@@ -20,6 +20,7 @@
 
   <ion-list class="dashboard__welcome">
 
+
       <ion-title class="weight-bold brand-title">
         <ion-text color="primary">Ni</ion-text>
         
@@ -27,7 +28,11 @@
       </ion-title>
       <ion-toolbar>
 
-        <ion-text class="weight-bold">We provide custom software <br/> by architecting interactive cross-platform applications</ion-text>
+        <!-- <ion-text class="weight-bold">We provide custom software <br/> by architecting interactive cross-platform applications</ion-text> -->
+
+        <ion-text>
+          Something that changes everything
+        </ion-text>
 
       </ion-toolbar>
   
@@ -63,12 +68,22 @@
     Discover what you came here for
   </ion-text>
 </section>
+
 <section>
   <ion-list class="fancy-list">
     
     <app-fancy-card *ngFor="let element of fancyCards" [props]="element"></app-fancy-card>
 
   </ion-list>
+
+
+    
+  <ion-list class="card-list ion-items-center">
+
+    <app-sub-fancy-card *ngFor="let element of fancyCards" [props]="element"></app-sub-fancy-card>
+  
+  </ion-list>
+
 </section>
 
 <section class="headline-content ion-items-center">
@@ -89,6 +104,9 @@
     content
 
   </ion-list>
+
+
+
 
 </section>
 

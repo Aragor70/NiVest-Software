@@ -1,0 +1,63 @@
+
+.card {
+
+    position: relative;
+    width: 100% !important;
+    --background: none;
+    --min-heightt: 200px !important;
+    display: flex;
+    align-items: center;
+
+    &__img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    &__body {
+      background: rgba(0, 0, 0, 0.2);
+      color: #fff;
+      padding: 20px;
+      width: 100%;
+      height: 100%;
+    }
+
+    
+    &__title, &__text {
+
+        margin: 0;
+      }
+
+      &__title {
+        font-size: 1.6em;
+        line-height: 1.4;
+        margin-bottom: 0.5em;
+      }
+
+      &__text {
+        font-size: 1.2em;
+        line-height: 1.4;
+      }
+
+    &::before, &::after {
+
+      content: '';
+      position: absolute;
+      border: 2px solid #fff;
+      background-color: #fff;
+    }
+
+    &::before {
+      top: 1em;
+      bottom: 1em;
+      right: 1em;
+    }
+    &::after {
+      bottom: 1em;
+      left: 1em;
+      right: 1em;
+    }
+
+}

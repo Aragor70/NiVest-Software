@@ -482,4 +482,15 @@ ion-footer
   z-index: 12;
 }
 
+.gradient 
+{
+  background: -webkit-linear-gradient(35deg,#012169 0,#C8102E 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: none;
+    position: relative;
+}
 
+ion-card {
+  margin: 0;
+}
