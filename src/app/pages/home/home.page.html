@@ -14,32 +14,34 @@
 
 <section class="dashboard">
 
-  <app-binary-tree></app-binary-tree>
 
   <app-circular-button></app-circular-button>
 
   <ion-list class="dashboard__welcome">
 
+    <ion-title class="weight-bold brand-title">
+      <ion-text color="primary">Ni</ion-text>
+      
+      <ion-text color="secondary">Vest Software</ion-text>
+    </ion-title>
+    <ion-toolbar>
 
-      <ion-title class="weight-bold brand-title">
-        <ion-text color="primary">Ni</ion-text>
-        
-        <ion-text color="secondary">Vest Software</ion-text>
-      </ion-title>
-      <ion-toolbar>
+      <!-- <ion-text class="weight-bold">We provide custom software <br/> by architecting interactive cross-platform applications</ion-text> -->
 
-        <!-- <ion-text class="weight-bold">We provide custom software <br/> by architecting interactive cross-platform applications</ion-text> -->
+      <ion-text>
+        Bespoke software development
+      </ion-text>
 
-        <ion-text>
-          Something that changes everything
-        </ion-text>
-
-      </ion-toolbar>
+    </ion-toolbar>
   
-      </ion-list>
+  </ion-list>
+  <ion-list class="icon-list">
+  
+    <app-icon-group *ngFor="let element of iconsDashboard" [props]="element"></app-icon-group>
 
-  <ion-list class="dashboard__welcome">
-    <ion-label>
+  </ion-list>
+  <!-- <ion-list class="dashboard__welcome"> -->
+    <!-- <ion-label>
       <div class="ion-items-vertical-center">Angular</div>
       <ion-icon size="large" name="logo-angular"></ion-icon>
     </ion-label>
@@ -58,8 +60,8 @@
     <ion-label>
       <div class="ion-items-vertical-center">Python</div>
       <ion-icon size="large" name="logo-python"></ion-icon>
-    </ion-label>
-  </ion-list>
+    </ion-label> -->
+  <!-- </ion-list> -->
 </section>
 
 
@@ -76,8 +78,6 @@
 
   </ion-list>
 
-
-    
   <ion-list class="card-list ion-items-center">
 
     <app-sub-fancy-card *ngFor="let element of fancyCards" [props]="element"></app-sub-fancy-card>
@@ -86,29 +86,7 @@
 
 </section>
 
-<section class="headline-content ion-items-center">
-  
-  <ion-title>
-    <ion-text>
-      Overview
-    </ion-text>
-    
-  </ion-title>
-
-</section>
-
-<section class="content ion-items-vertical-center">
-  
-  <ion-list>
-
-    content
-
-  </ion-list>
-
-
-
-
-</section>
+<app-overview></app-overview>
 
 <section class="ion-items-center">
   <ion-card>

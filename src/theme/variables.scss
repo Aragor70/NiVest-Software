@@ -494,3 +494,27 @@ ion-footer
 ion-card {
   margin: 0;
 }
+
+
+
+.headline-content
+{
+  min-height: 20vh;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 0 20px;
+  color: #424242;
+
+  ion-text {
+    
+    font-size: 1.4em;
+    font-weight: 600;
+    font-family: Verdana, sans-serif;
+
+    @media (min-width: 1023px) {
+
+      font-size: 1.5em;
+    }
+  }
+}

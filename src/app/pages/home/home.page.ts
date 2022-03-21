@@ -7,6 +7,33 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
   
+  iconsDashboard: any[] = [
+    {
+      icon: "logo-angular",
+      text: "Angular",
+      background: "",
+      style: {'position': 'absolute', 'bottom': '30px', 'left': '15px'}
+    },
+    {
+      icon: "logo-react",
+      text: "React",
+      background: "",
+      style: {'position': 'absolute', 'bottom': '150px', 'left': '30%'}
+    },
+    {
+      icon: "/assets/icon/django.png",
+      text: "Django",
+      background: "",
+      style: {'position': 'absolute', 'bottom': '220px', 'right': '30%'}
+    },
+    {
+      icon: "/assets/icon/nodejs.png",
+      text: "NodeJS",
+      background: "",
+      style: {'position': 'absolute', 'bottom': '350px', 'right': '15%'}
+    }
+  ]
+
   fancyCards: any[] = [
 
     {
@@ -40,7 +67,7 @@ export class HomePage {
       large: true
     },
     {
-      title: 'Algorithms and data structures',
+      title: 'NiVest for Education',
       sub_title: 'Take advantage of the NiVest Software resources',
       icon: 'color-filter-outline',
       imgs: [
@@ -55,7 +82,7 @@ export class HomePage {
       large: true
     },
     {
-      title: 'About us',
+      title: 'Insider',
       sub_title: "Partner up. Create what's next.",
       icon: 'accessibility-outline',
       imgs: [

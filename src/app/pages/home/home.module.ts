@@ -11,6 +11,8 @@ import { BinaryTreeComponent } from 'src/app/components/binary-tree/binary-tree.
 import { TreeNodeComponent } from 'src/app/components/binary-tree/tree-node/tree-node.component';
 import { CircularButtonComponent } from 'src/app/components/circular-button/circular-button.component';
 import { SubFancyCardComponent } from 'src/app/components/sub-fancy-card/sub-fancy-card.component';
+import { IconGroupComponent } from 'src/app/components/icon-group/icon-group.component';
+import { OverviewComponent } from 'src/app/components/overview/overview.component';
 
 
 @NgModule({
@@ -20,6 +22,6 @@ import { SubFancyCardComponent } from 'src/app/components/sub-fancy-card/sub-fan
     IonicModule,
     HomePageRoutingModule,
   ],
-  declarations: [HomePage, TodoComponent, FancyCardComponent, BinaryTreeComponent, TreeNodeComponent, CircularButtonComponent, SubFancyCardComponent]
+  declarations: [HomePage, TodoComponent, FancyCardComponent, BinaryTreeComponent, TreeNodeComponent, CircularButtonComponent, SubFancyCardComponent, IconGroupComponent, OverviewComponent]
 })
 export class HomePageModule {}

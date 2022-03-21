@@ -1,0 +1,7 @@
+
+
+<ion-label class="ion-items-center" [ngStyle]="props.style" >
+  <ion-icon *ngIf="!props?.icon?.includes('/')" size="large" name="{{props.icon}}"></ion-icon>
+  <ion-img *ngIf="props?.icon?.includes('/')" src="{{props.icon}}"></ion-img>
+  <ion-text>{{props.text}}</ion-text>
+</ion-label>

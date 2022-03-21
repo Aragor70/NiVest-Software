@@ -15,19 +15,16 @@ ion-label.fancy-label
     padding: 100px 32px 100px;
     
   }
-
-  
-
 }
 
 .fancy-card
 {
   max-height: 100%;
-  width: 200px;
+  width: 230px;
   height: 230px;
   position: relative;
   background-color: #fff;
-  padding: 7.5px;
+  padding: 15px 7.5px;
   color: #000;
 
   display: flex;
@@ -37,6 +34,7 @@ ion-label.fancy-label
   cursor: pointer;
   z-index: 3;
   aspect-ratio: 1 / 1;
+  border-radius: 25px;
 
   ion-icon {
     position: absolute;

@@ -17,6 +17,12 @@ ion-header {
   align-items: flex-end;
   padding: 20px;
   
+  .icon-list {
+    contain: none;
+    position: relative;
+    width: 50%;
+    height: 100%;
+  }
 
   &__welcome {
     width: max-content;
@@ -26,19 +32,7 @@ ion-header {
     margin-bottom: 20px;
     padding: 20px !important;
 
-    &:nth-of-type(2) {
-      display: none;
-    }
-
-    ion-label {
-      display: none;
-    }
-
-    div {
-      display: none;
-    }
     
-
     .brand-title {
       margin-bottom: 20px;
     }
@@ -127,7 +121,7 @@ ion-header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
+  background-color: #012169;
   display: none;
   
   @media (min-width: 768px) {
@@ -146,27 +140,6 @@ ion-header {
   }
 }
 
-.headline-content
-{
-  min-height: 20vh;
-  width: 100%;
-  box-sizing: border-box;
-  text-align: center;
-  padding: 0 20px;
-  color: #424242;
-
-  ion-text {
-    
-    font-size: 1.4em;
-    font-weight: 600;
-    font-family: Verdana, sans-serif;
-
-    @media (min-width: 1023px) {
-
-      font-size: 1.5em;
-    }
-  }
-}
 
 .content {
   width: 100%;
@@ -179,8 +152,7 @@ ion-header {
 
   row-gap: 30px;
   padding: 20px;
-
-    width: 100vw;
+  width: 100vw;
 
   @media (min-width: 768px) {
     display: none;
