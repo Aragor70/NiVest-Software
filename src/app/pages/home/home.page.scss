@@ -185,23 +185,33 @@ ion-header {
 .slider {
   width: 100%;
 
-    
     width: 100%;
     display: flex;
     column-gap: 40px;
     justify-content: center;
     align-items: center;
-    grid-template-columns: 50% 50%;
     padding: 0 40px;
+    
+    .slide:nth-child(1) {
+      background-image: url('https://storage-asset.msi.com/frontend/imgs/reward.jpg');
+      background-size: cover;
+      background-position: bottom;
+      background-repeat: no-repeat;
+    }
+    .slide:nth-child(2) {
+      background-image: url('/assets/IMAG0259.jpg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
 
   .slide {
-    background-image: url('https://storage-asset.msi.com/frontend/imgs/reward.jpg');
-    background-size: cover;
-    background-position: bottom;
+    
     width: 100%;
     height: 50vh;
     border-radius: 25px;
     position: relative;
+    display: flex;
 
 
     &::before {
@@ -213,6 +223,35 @@ ion-header {
       height: 100%;
       background-color: rgba(26, 32, 44, 0.5);
       border-radius: 25px;
+    }
+
+    ion-card {
+      width: max-content;
+      position: absolute;
+      text-align: left;
+      padding: 16px;
+      font-weight: 700;
+      color: #fff;
+      background-color: rgba(26, 32, 44, 0);
+
+      ion-card-header {
+        padding: 0;
+
+        ion-card-title {
+          font-weight: 900;
+          font-size: 25px;
+          color: #fff;
+        }
+      }
+    }
+
+    ion-card:nth-child(1) {
+      bottom: 40px;
+      left: 40px;
+    }
+    ion-card:nth-child(2) {
+      top: 40px;
+      right: 40px;
     }
   }
 
