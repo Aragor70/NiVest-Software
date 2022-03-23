@@ -12,25 +12,25 @@ export class HomePage {
       icon: "logo-angular",
       text: "Angular",
       background: "",
-      style: {'position': 'absolute', 'bottom': '30px', 'left': '15px'}
+      style: {'position': 'absolute', 'bottom': '35px', 'left': '25%'}
     },
     {
       icon: "logo-react",
       text: "React",
       background: "",
-      style: {'position': 'absolute', 'bottom': '150px', 'left': '30%'}
+      style: {'position': 'absolute', 'bottom': '150px', 'left': '45%'}
     },
     {
       icon: "/assets/icon/django.png",
       text: "Django",
       background: "",
-      style: {'position': 'absolute', 'bottom': '220px', 'right': '30%'}
+      style: {'position': 'absolute', 'bottom': '220px', 'right': '25%'}
     },
     {
       icon: "/assets/icon/nodejs.png",
       text: "NodeJS",
       background: "",
-      style: {'position': 'absolute', 'bottom': '350px', 'right': '15%'}
+      style: {'position': 'absolute', 'bottom': '350px', 'right': '5%'}
     }
   ]
 
