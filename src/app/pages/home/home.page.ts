@@ -12,25 +12,25 @@ export class HomePage {
       icon: "logo-angular",
       text: "Angular",
       background: "",
-      style: {'position': 'absolute', 'bottom': '35px', 'left': '25%'}
+      style: {}
     },
     {
       icon: "logo-react",
       text: "React",
       background: "",
-      style: {'position': 'absolute', 'bottom': '150px', 'left': '45%'}
+      style: {}
     },
     {
       icon: "/assets/icon/django.png",
       text: "Django",
       background: "",
-      style: {'position': 'absolute', 'bottom': '220px', 'right': '25%'}
+      style: {}
     },
     {
       icon: "/assets/icon/nodejs.png",
       text: "NodeJS",
       background: "",
-      style: {'position': 'absolute', 'bottom': '350px', 'right': '5%'}
+      style: {}
     }
   ]
 
