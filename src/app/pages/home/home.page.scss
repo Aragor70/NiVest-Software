@@ -142,7 +142,7 @@ ion-header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #012169;
+  background-color: rgba(1, 33, 105, 0.7);
   display: none;
   
   @media (min-width: 768px) {
@@ -223,6 +223,7 @@ ion-header {
       height: 100%;
       background-color: rgba(26, 32, 44, 0.5);
       border-radius: 25px;
+      overflow: hidden;
     }
 
     ion-card {
