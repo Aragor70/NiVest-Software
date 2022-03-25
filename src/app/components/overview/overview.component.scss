@@ -3,19 +3,26 @@
 .large-icon
 {
     width: 220px;
-    height: 220px;
+    height: 220px !important;
     position: relative;
+
+    z-index: 1;
 
     &::before {
         content: '';
         position: absolute;
         top: 0;
         left: 0;
-        width: 100%;
-        height: 100%;
+        right: 0;
+        bottom: 0;
         background-color: rgba(26, 32, 44, 0.5);
         border-radius: 50%;
-        
+        z-index: 2;
+    }
+
+    img {
+        width: 220px;
+        height: 220px;
     }
 
 }

@@ -21,7 +21,7 @@ ion-label.fancy-label
 {
   max-height: 100%;
   width: 230px;
-  height: 230px;
+  height: 270px;
   position: relative;
   background-color: #fff;
   padding: 15px 7.5px;
@@ -112,10 +112,18 @@ ion-label.fancy-label
   }
 }
 
+.fancy-label:hover .fancy-card
+{
+  z-index: 12;
+}
 .fancy-label:hover .fancy-subcard
 {
   width: 72px;
   height: 72px;
+  z-index: 11;
+  contain: none;
+  border-radius: 50%;
+
 }
 
 .fancy-subcard > img
@@ -145,15 +153,15 @@ ion-label.fancy-label
 }
 .fancy-label:hover > .fancy-subcard:nth-of-type(2)
 {
-  transform: translate(-126px, 134px) rotate(-15deg); 
+  transform: translate(-126px, 174px) rotate(-15deg); 
 }
 .fancy-label:hover > .fancy-subcard:nth-of-type(3)
 { 
-  transform: translate(5px, 158px) rotate(7.5deg); 
+  transform: translate(5px, 198px) rotate(7.5deg); 
 }
 .fancy-label:hover > .fancy-subcard:nth-of-type(4)
 { 
-  transform: translate(185%, 158px) rotate(-15deg); 
+  transform: translate(185%, 188px) rotate(-15deg); 
 }
 .fancy-label:hover > .fancy-subcard:nth-of-type(5)
 { 
@@ -167,18 +175,18 @@ ion-label.fancy-label
 }
 .large:hover > .fancy-subcard:nth-of-type(2)
 {
-  transform: translate(-136px, 174px) rotate(-15deg); 
+  transform: translate(-136px, 194px) rotate(-15deg); 
 }
 .large:hover > .fancy-subcard:nth-of-type(3)
 { 
-  transform: translate(5px, 188px) rotate(7.5deg); 
+  transform: translate(5px, 228px) rotate(7.5deg); 
 }
 .large:hover > .fancy-subcard:nth-of-type(4)
 { 
-  transform: translate(185%, 188px) rotate(-15deg); 
+  transform: translate(185%, 223px) rotate(-15deg); 
 }
 .large:hover > .fancy-subcard:nth-of-type(5)
 { 
-  transform: translate(205%, 25px) rotate(15deg); 
+  transform: translate(205%, 45px) rotate(15deg); 
 }
 
