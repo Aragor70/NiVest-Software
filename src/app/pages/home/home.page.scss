@@ -8,6 +8,9 @@ ion-header {
   }
 }
 
+section {
+  padding: 0 40px;
+}
 .dashboard
 {
   height: calc(100vh - 60px);
@@ -144,6 +147,7 @@ ion-header {
   flex-direction: column;
   background-color: rgba(1, 33, 105, 0.7);
   display: none;
+  border-radius: 25px;
   
   @media (min-width: 768px) {
 
