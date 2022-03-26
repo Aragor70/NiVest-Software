@@ -14,6 +14,8 @@ import { SubFancyCardComponent } from 'src/app/components/sub-fancy-card/sub-fan
 import { IconGroupComponent } from 'src/app/components/icon-group/icon-group.component';
 import { OverviewComponent } from 'src/app/components/overview/overview.component';
 import { SoftwareDevelopmentComponent } from 'src/app/components/software-development/software-development.component';
+import { NivestForEducationComponent } from 'src/app/components/nivest-for-education/nivest-for-education.component';
+import { InsiderComponent } from 'src/app/components/insider/insider.component';
 
 
 @NgModule({
@@ -23,6 +25,6 @@ import { SoftwareDevelopmentComponent } from 'src/app/components/software-develo
     IonicModule,
     HomePageRoutingModule,
   ],
-  declarations: [HomePage, TodoComponent, FancyCardComponent, BinaryTreeComponent, TreeNodeComponent, CircularButtonComponent, SubFancyCardComponent, IconGroupComponent, OverviewComponent, SoftwareDevelopmentComponent]
+  declarations: [HomePage, TodoComponent, FancyCardComponent, BinaryTreeComponent, TreeNodeComponent, CircularButtonComponent, SubFancyCardComponent, IconGroupComponent, OverviewComponent, SoftwareDevelopmentComponent, NivestForEducationComponent, InsiderComponent]
 })
 export class HomePageModule {}
