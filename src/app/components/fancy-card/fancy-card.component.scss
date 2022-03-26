@@ -43,6 +43,14 @@ ion-label.fancy-label
     --ionicon-stroke-width: 16px;
     color:#012169;
   }
+  ion-item {
+    --background: none;
+    transition: all 0.3s ease-in;
+  }
+
+  ion-text {
+    font-weight: 500;
+  }
 }
 
   @media (min-width: 1023px) {
@@ -165,7 +173,7 @@ ion-label.fancy-label
 }
 .fancy-label:hover > .fancy-subcard:nth-of-type(5)
 { 
-  transform: translate(205%, 25px) rotate(15deg); 
+  transform: translate(215%, 25px) rotate(15deg); 
 }
 
 
@@ -187,6 +195,6 @@ ion-label.fancy-label
 }
 .large:hover > .fancy-subcard:nth-of-type(5)
 { 
-  transform: translate(205%, 45px) rotate(15deg); 
+  transform: translate(215%, 45px) rotate(15deg); 
 }
 

@@ -104,21 +104,23 @@
 </section>
 
 <section>
-  <ion-list class="fancy-list">
+  <ion-list class="fancy-list fancy">
     
-    <app-fancy-card *ngFor="let element of fancyCards" [props]="element"></app-fancy-card>
+    <app-fancy-card *ngFor="let element of fancyCards" [props]="element" type="fancy"></app-fancy-card>
 
   </ion-list>
 
-  <ion-list class="card-list ion-items-center">
+  <ion-list class="card-list ion-items-center fancy">
 
-    <app-sub-fancy-card *ngFor="let element of fancyCards" [props]="element"></app-sub-fancy-card>
+    <app-sub-fancy-card *ngFor="let element of fancyCards" [props]="element" type="fancy"></app-sub-fancy-card>
   
   </ion-list>
 
 </section>
 
 <app-overview></app-overview>
+
+<app-software-development></app-software-development>
 
 <section class="ion-items-center">
   <ion-card>

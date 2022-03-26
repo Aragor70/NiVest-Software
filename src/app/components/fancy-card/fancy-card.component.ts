@@ -6,11 +6,21 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./fancy-card.component.scss'],
 })
 export class FancyCardComponent implements OnInit {
-
   @Input() props: any;
+  @Input() type: string;
+
+  isHovered = false;
 
   constructor() { }
 
   ngOnInit() {}
+
+  mouseEnter(){
+    this.isHovered = true;
+  }
+
+  mouseLeave(){
+    this.isHovered = false;
+  }
 
 }

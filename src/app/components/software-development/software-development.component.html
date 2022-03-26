@@ -1,0 +1,31 @@
+<section class="headline-content ion-items-center">
+  
+  <ion-title>
+
+    <ion-text>
+      Software development
+    </ion-text>
+    
+  </ion-title>
+
+</section>
+
+<section>
+
+  <ion-title>
+    <ion-text>
+      Custom software services
+    </ion-text>
+    
+  </ion-title>
+  <ion-item>
+    We can help with both a new project and an already existing one
+  </ion-item>
+
+  <ion-list class="fancy-list normal">
+    
+    <app-fancy-card *ngFor="let element of fancyCards" [props]="element" [type]=""></app-fancy-card>
+
+  </ion-list>
+  
+</section>

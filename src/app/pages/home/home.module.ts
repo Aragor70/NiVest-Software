@@ -13,6 +13,7 @@ import { CircularButtonComponent } from 'src/app/components/circular-button/circ
 import { SubFancyCardComponent } from 'src/app/components/sub-fancy-card/sub-fancy-card.component';
 import { IconGroupComponent } from 'src/app/components/icon-group/icon-group.component';
 import { OverviewComponent } from 'src/app/components/overview/overview.component';
+import { SoftwareDevelopmentComponent } from 'src/app/components/software-development/software-development.component';
 
 
 @NgModule({
@@ -22,6 +23,6 @@ import { OverviewComponent } from 'src/app/components/overview/overview.componen
     IonicModule,
     HomePageRoutingModule,
   ],
-  declarations: [HomePage, TodoComponent, FancyCardComponent, BinaryTreeComponent, TreeNodeComponent, CircularButtonComponent, SubFancyCardComponent, IconGroupComponent, OverviewComponent]
+  declarations: [HomePage, TodoComponent, FancyCardComponent, BinaryTreeComponent, TreeNodeComponent, CircularButtonComponent, SubFancyCardComponent, IconGroupComponent, OverviewComponent, SoftwareDevelopmentComponent]
 })
 export class HomePageModule {}

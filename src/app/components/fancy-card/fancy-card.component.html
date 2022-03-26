@@ -1,10 +1,16 @@
-<ion-label class='fancy-label ion-items-center' [class]="props.large ? 'large' : ''">
+<ion-label (mouseenter) ="mouseEnter() "  (mouseleave) ="mouseLeave()" class='fancy-label ion-items-center' [ngClass]="{'large': props.large, fancy: type === 'fancy', normal: type !== 'fancy'}">
   <ion-card class='fancy-card ion-items-center' [routerLink]="props.url">
 
     <ion-icon name={{props.icon}} class="ion-4x"></ion-icon>
 
-    <ion-item lines="none" color="none">
+    <ion-item lines="none" color="none" [ngStyle]="isHovered && { 'color': '#C8102E' }">
         {{ props.title }}
+    </ion-item>
+
+    <ion-item *ngIf="isHovered">
+      <ion-text>
+        {{ props.sub_title }}
+      </ion-text>
     </ion-item>
 
     <hr />

@@ -10,6 +10,7 @@ ion-header {
 
 section {
   padding: 0 40px;
+  contain: none;
 }
 .dashboard
 {
@@ -146,8 +147,8 @@ section {
   align-items: center;
   flex-direction: column;
   background-color: rgba(1, 33, 105, 0.7);
-  display: none;
   border-radius: 25px;
+  contain: none;
   
   @media (min-width: 768px) {
 
@@ -178,7 +179,7 @@ section {
   row-gap: 30px;
   padding: 20px;
   width: 100vw;
-
+  display: none;
   @media (min-width: 768px) {
     display: none;
   }
