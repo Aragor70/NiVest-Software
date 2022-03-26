@@ -3,6 +3,12 @@ section {
     padding: 0 40px;
 }
 
+article {
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+}
+
 ion-card {
     width: 100%;
     min-height: 50vh;

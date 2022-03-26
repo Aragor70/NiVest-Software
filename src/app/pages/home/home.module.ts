@@ -16,6 +16,7 @@ import { OverviewComponent } from 'src/app/components/overview/overview.componen
 import { SoftwareDevelopmentComponent } from 'src/app/components/software-development/software-development.component';
 import { NivestForEducationComponent } from 'src/app/components/nivest-for-education/nivest-for-education.component';
 import { InsiderComponent } from 'src/app/components/insider/insider.component';
+import { PersonalCardComponent } from 'src/app/components/personal-card/personal-card.component';
 
 
 @NgModule({
@@ -25,6 +26,6 @@ import { InsiderComponent } from 'src/app/components/insider/insider.component';
     IonicModule,
     HomePageRoutingModule,
   ],
-  declarations: [HomePage, TodoComponent, FancyCardComponent, BinaryTreeComponent, TreeNodeComponent, CircularButtonComponent, SubFancyCardComponent, IconGroupComponent, OverviewComponent, SoftwareDevelopmentComponent, NivestForEducationComponent, InsiderComponent]
+  declarations: [HomePage, TodoComponent, FancyCardComponent, BinaryTreeComponent, TreeNodeComponent, CircularButtonComponent, SubFancyCardComponent, IconGroupComponent, OverviewComponent, SoftwareDevelopmentComponent, NivestForEducationComponent, InsiderComponent, PersonalCardComponent]
 })
 export class HomePageModule {}

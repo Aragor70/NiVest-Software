@@ -3,7 +3,33 @@ section {
     padding: 0 40px;
 }
 
+article {
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+}
+
 ion-card {
     width: 100%;
     min-height: 20vh;
+}
+
+
+.fancy-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(1, 33, 105, 0.7);
+    border-radius: 25px;
+    contain: none;
+
+    @media (min-width: 600px) {
+
+        display: grid;
+        align-items: flex-start;
+        grid-template-columns: 50% 50%;
+        
+    }
+
 }

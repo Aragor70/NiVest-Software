@@ -12,31 +12,79 @@
 
 <section>
 
+  <article>
+    <ion-card>
+      
+      <ion-item>
+        <ion-title>
+          OUR VISION
+        </ion-title>
+      </ion-item>
+      <ion-item>
+        As a British leader in high-end software solutions, NiVest is unwaveringly committed to cutting-edge innovation and aesthetic design development that not only fulfill customer needs across industries but also create extraordinary user experiences.
+      </ion-item>
 
-  <ion-card>
-    
-    <ion-item>
-      <ion-title>
-        OUR VISION
-      </ion-title>
-    </ion-item>
-    <ion-item>
-      As a British leader in high-end software solutions, NiVest is unwaveringly committed to cutting-edge innovation and aesthetic design development that not only fulfill customer needs across industries but also create extraordinary user experiences.
-    </ion-item>
+    </ion-card>
 
-  </ion-card>
+    <ion-card>
+      
+      <ion-item>
+        <ion-title>
+          OUR MISSION
+        </ion-title>
+      </ion-item>
+      <ion-item>
+        NiVest Software is dedicated to empowering creators and business elites with best-in-class software solutions engineered to satisfy their every need.
+      </ion-item>
 
-  <ion-card>
-    
-    <ion-item>
-      <ion-title>
-        OUR MISSION
-      </ion-title>
-    </ion-item>
-    <ion-item>
-      NiVest Software is dedicated to empowering creators and business elites with best-in-class software solutions engineered to satisfy their every need.
-    </ion-item>
+    </ion-card>
+  </article>
+</section>
 
-  </ion-card>
+<section class="headline-content ion-items-center">
   
+  <ion-title>
+
+    <ion-text>
+      The team
+    </ion-text>
+    
+  </ion-title>
+
+</section>
+
+<section>
+
+  <article>
+    <app-personal-card></app-personal-card>
+  </article>
+
+</section>
+
+
+<section class="headline-content ion-items-center">
+  
+  <ion-title>
+
+    <ion-text>
+      Thank you for choosing NiVest Software.
+    </ion-text>
+    
+  </ion-title>
+
+</section>
+
+
+<section>
+
+  <article>
+    
+    <ion-list class="fancy-list normal">
+      
+      <app-fancy-card *ngFor="let element of fancyCards" [props]="element" [type]=""></app-fancy-card>
+
+    </ion-list>
+  
+  </article>
+
 </section>

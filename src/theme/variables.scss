@@ -497,6 +497,14 @@ ion-footer
 
 .fancy-list {
   background-color: transparent;
+
+  
+  @media (max-width: 1023px) {
+
+    row-gap: 48px;
+    padding: 48px !important;
+    
+  }
 }
 
 

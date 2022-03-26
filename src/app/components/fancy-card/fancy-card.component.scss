@@ -2,13 +2,18 @@
 ion-label.fancy-label
 {
   position: relative;
-  padding: 32px 32px 100px;
   float: left;
   border-radius: 50%;
   width: 100%;
 
   height: auto;
 
+  @media (max-width: 1023px) {
+
+    
+    padding: 0;
+    
+  }
 
   @media (min-width: 1023px) {
 
