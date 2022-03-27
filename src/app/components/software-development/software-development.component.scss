@@ -1,5 +1,13 @@
 section {
     padding: 0 40px;
+    
+    article {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        margin: 40px 0;
+
+    }
 }
 
 .fancy-list {
@@ -12,7 +20,7 @@ section {
     contain: none;
     
     
-    @media (min-width: 600px) {
+    @media (min-width: 768px) {
 
         display: grid;
         align-items: flex-start;

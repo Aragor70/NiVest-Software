@@ -2,7 +2,7 @@
   
   <ion-title>
 
-    <ion-text>
+    <ion-text class="ion-text-wrap">
       Software development
     </ion-text>
     
@@ -11,21 +11,21 @@
 </section>
 
 <section>
-
-  <ion-title>
-    <ion-text>
-      Custom software services
-    </ion-text>
+  <article>
+    <ion-title>
+      <ion-text>
+        Custom software services
+      </ion-text>
+      
+    </ion-title>
+    <ion-item>
+      We can help with both a new project and an already existing one
+    </ion-item>
     
-  </ion-title>
-  <ion-item>
-    We can help with both a new project and an already existing one
-  </ion-item>
+    <ion-list class="fancy-list normal">
+      
+      <app-fancy-card *ngFor="let element of fancyCards" [props]="element" [type]=""></app-fancy-card>
 
-  <ion-list class="fancy-list normal">
-    
-    <app-fancy-card *ngFor="let element of fancyCards" [props]="element" [type]=""></app-fancy-card>
-
-  </ion-list>
-  
+    </ion-list>
+  </article>
 </section>

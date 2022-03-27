@@ -1,11 +1,51 @@
 
 section {
     padding: 0 40px;
+
+
+    article {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        margin: 40px 0;
+
+        ion-text {
+
+            line-height: 1.6;
+            font-size: 22px;
+            width: 100%;
+        }
+
+        ion-list {
+            padding: 0 !important;
+        }
+
+        ion-title {
+
+            text-align: center;
+            
+            @media (min-width: 1023px) {
+                width: 50%;
+                
+            }
+        }
+
+        &:nth-child(2) ion-title {
+
+            @media (min-width: 1023px) {
+                margin-left: auto;
+                
+            }
+        }
+
+        
+    }
 }
 
 ion-title {
 
-    padding: 40px;
+    padding: 40px 0;
+
 }
 
 
@@ -13,8 +53,9 @@ ion-title {
 
     width: 100%;
     flex-direction: row;
-    gap: 40px;
-
+    gap: 48px;
+    
+    
     flex-wrap: wrap;
 
     ion-card {
@@ -34,8 +75,6 @@ ion-title {
             z-index: 2;
         }
     }
-
-
 
 }
 
