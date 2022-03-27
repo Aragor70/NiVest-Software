@@ -9,11 +9,19 @@ section {
         gap: 40px;
         margin: 40px 0;
 
+        ion-grid {
+            width: 100%;
+        }
+
         ion-text {
 
             line-height: 1.6;
             font-size: 22px;
             width: 100%;
+        }
+        .text-label {
+            padding: 48px;
+            border-radius: 25px;
         }
 
         ion-list {
@@ -91,3 +99,52 @@ ion-title {
 
 }
 
+.half-page {
+    width: 50%;
+}
+
+.right {
+    margin-left: auto;
+}
+.left {
+    margin-right: auto;
+}
+ion-col {
+    width: 100%;
+}
+
+.icons-group {
+    ion-grid {
+        display: grid;
+        row-gap: 102px;
+    }
+    ion-col {
+
+        width: max-content !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    ion-label {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        width: max-content !important;
+        
+        
+        img {
+            height: 96px;
+        }
+        ion-icon {
+            width: 96px;
+            height: 96px;
+        }
+        svg {
+            height: 96px;
+        }
+    }
+
+}
