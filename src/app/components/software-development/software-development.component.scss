@@ -7,6 +7,20 @@ section {
         gap: 40px;
         margin: 40px 0;
 
+        .text-label {
+            padding: 48px;
+            border-radius: 25px;
+        }
+
+        ion-text {
+
+            line-height: 1.6;
+            font-size: 22px;
+            width: 100%;
+        }
+
+
+
     }
 }
 
@@ -38,4 +52,28 @@ section {
         
     }
 
+}
+
+ion-title {
+
+    padding: 40px 0;
+
+}
+
+ion-title {
+
+    text-align: center;
+    
+    @media (min-width: 1023px) {
+        width: 50%;
+        
+    }
+}
+
+
+.big70 {
+    @media (min-width: 1023px) {
+        
+        width: 70%;
+    }
 }

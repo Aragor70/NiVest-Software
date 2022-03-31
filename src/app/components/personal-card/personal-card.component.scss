@@ -1,0 +1,26 @@
+ion-card {
+    padding: 40px;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    margin: 0 auto;
+
+    ion-label.picture {
+        border-radius: 25px !important;
+        overflow: hidden;
+        width: 225px;
+    }
+}
+ion-card > * {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+    padding: 0;
+    
+}
+ion-card-header {
+    padding: 30px !important;
+}

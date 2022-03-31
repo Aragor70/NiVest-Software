@@ -9,6 +9,26 @@ article {
     flex-direction: column;
     
     margin: 40px 0;
+
+    ion-text {
+
+        line-height: 1.6;
+        font-size: 22px;
+        width: 100%;
+    }
+
+    ion-card, .card-ios, .card-md {
+        box-shadow: none !important;
+    }
+    
+    
+    ion-card-content {
+        
+        display: flex;
+        flex-direction: column;
+
+    }
+
 }
 
 ion-card {
@@ -34,4 +54,32 @@ ion-card {
         
     }
 
+}
+
+.right {
+
+    @media (min-width: 768px) {
+        
+        margin-left: auto;
+    }
+}
+.left {
+
+    @media (min-width: 768px) {
+        
+        margin-right: auto;
+    }
+    
+}
+.half-page {
+    @media (min-width: 1023px) {
+        
+        width: 50%;
+    }
+}
+.big70 {
+    @media (min-width: 768px) {
+        
+        width: 70%;
+    }
 }

@@ -100,14 +100,33 @@ ion-title {
 }
 
 .half-page {
-    width: 50%;
+    @media (min-width: 768px) {
+        
+        width: 50%;
+    }
+}
+
+.big70 {
+    @media (min-width: 768px) {
+        
+        width: 70%;
+    }
 }
 
 .right {
-    margin-left: auto;
+
+    @media (min-width: 768px) {
+        
+        margin-left: auto;
+    }
 }
 .left {
-    margin-right: auto;
+
+    @media (min-width: 768px) {
+        
+        margin-right: auto;
+    }
+    
 }
 ion-col {
     width: 100%;
@@ -147,4 +166,20 @@ ion-col {
         }
     }
 
+}
+
+.from-col-row {
+    @media (max-width: 768px) {
+
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    
+    @media (min-width: 768px) {
+
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
 }
