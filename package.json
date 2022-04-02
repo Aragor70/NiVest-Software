@@ -27,6 +27,7 @@
     "@ionic/core": "^6.0.7",
     "@ngrx/store": "^13.0.2",
     "@ngrx/store-devtools": "^13.0.2",
+    "acorn-dynamic-import": "^4.0.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.2.0",
     "zone.js": "~0.11.4"

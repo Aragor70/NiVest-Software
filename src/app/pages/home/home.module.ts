@@ -17,6 +17,9 @@ import { SoftwareDevelopmentComponent } from 'src/app/components/software-develo
 import { NivestForEducationComponent } from 'src/app/components/nivest-for-education/nivest-for-education.component';
 import { InsiderComponent } from 'src/app/components/insider/insider.component';
 import { PersonalCardComponent } from 'src/app/components/personal-card/personal-card.component';
+import { NivestService } from 'src/app/services/nivest/nivest.service';
+import { HttpClientModule } from '@angular/common/http';
+import { StatisticTableComponent } from 'src/app/components/statistic-table/statistic-table.component';
 
 
 @NgModule({
@@ -25,7 +28,11 @@ import { PersonalCardComponent } from 'src/app/components/personal-card/personal
     FormsModule,
     IonicModule,
     HomePageRoutingModule,
+    HttpClientModule
   ],
-  declarations: [HomePage, TodoComponent, FancyCardComponent, BinaryTreeComponent, TreeNodeComponent, CircularButtonComponent, SubFancyCardComponent, IconGroupComponent, OverviewComponent, SoftwareDevelopmentComponent, NivestForEducationComponent, InsiderComponent, PersonalCardComponent]
+  providers: [
+    NivestService
+  ],
+  declarations: [HomePage, TodoComponent, FancyCardComponent, BinaryTreeComponent, TreeNodeComponent, CircularButtonComponent, SubFancyCardComponent, IconGroupComponent, OverviewComponent, SoftwareDevelopmentComponent, NivestForEducationComponent, InsiderComponent, PersonalCardComponent, StatisticTableComponent]
 })
 export class HomePageModule {}

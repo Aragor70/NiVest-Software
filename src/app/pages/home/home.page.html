@@ -3,10 +3,32 @@
 <ion-header [translucent]="true">
   <ion-list>
     <ion-item lines="none">
-      <ion-text color="primary">Ni</ion-text>
-        
-      <ion-text color="secondary">Vest Software</ion-text>
+      <div (click)="scroll('.dashboard')">
+        <ion-text color="primary">Ni</ion-text>
+          
+        <ion-text color="secondary">Vest Software</ion-text>
+
+      </div>
+      <ion-label>
+        <div (click)="scroll(fancyCards[0].selector)">
+          <ion-icon size="large" name="analytics-outline"></ion-icon>
+          <ion-text>Overview</ion-text>
+        </div>
+        <div (click)="scroll(fancyCards[1].selector)">
+          <ion-icon size="large" name="layers-outline"></ion-icon>
+          <ion-text>Software development</ion-text>
+        </div>
+        <div (click)="scroll(fancyCards[2].selector)">
+          <ion-icon size="large" name="color-filter-outline"></ion-icon>
+          <ion-text>NiVest for education</ion-text>
+        </div>
+        <div (click)="scroll(fancyCards[3].selector)">
+          <ion-icon size="large" name="accessibility-outline"></ion-icon>
+          <ion-text>Insider</ion-text>
+        </div>
+      </ion-label>
     </ion-item>
+
   </ion-list>
 </ion-header>
 
@@ -73,11 +95,11 @@
               Websites
             </ion-card-title>
           </ion-card-header>
-          <ion-card-body>
+          <ion-card-content>
             <ion-text>
               Bespoke software development
             </ion-text>
-          </ion-card-body>
+          </ion-card-content>
         </ion-card>
         <ion-card>
           <ion-card-header>
@@ -85,11 +107,11 @@
               Mobile app
             </ion-card-title>
           </ion-card-header>
-          <ion-card-body>
+          <ion-card-content>
             <ion-text>
               Bespoke software development
             </ion-text>
-          </ion-card-body>
+          </ion-card-content>
         </ion-card>
       </div>
       <div class="slide">
@@ -106,7 +128,7 @@
 <section>
   <ion-list class="fancy-list fancy">
     
-    <app-fancy-card *ngFor="let element of fancyCards" [props]="element" type="fancy"></app-fancy-card>
+    <app-fancy-card *ngFor="let element of fancyCards" (click)="scroll(element.selector)" [props]="element" type="fancy"></app-fancy-card>
 
   </ion-list>
 

@@ -1,0 +1,26 @@
+ion-title {
+    padding: 0;
+}
+
+.right {
+
+    @media (min-width: 768px) {
+        
+        margin-left: auto;
+    }
+}
+.left {
+
+    @media (min-width: 768px) {
+        
+        margin-right: auto;
+    }
+
+}
+
+.helf-page {
+    @media (min-width: 1023px) {
+        
+        width: 50% !important;
+    }
+}

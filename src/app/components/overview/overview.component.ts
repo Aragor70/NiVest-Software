@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NivestService } from 'src/app/services/nivest/nivest.service';
 
 @Component({
   selector: 'app-overview',
@@ -7,8 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OverviewComponent implements OnInit {
 
-  constructor() { }
+  public users = [];
 
-  ngOnInit() {}
+  constructor(private _nivestService: NivestService) {}
+
+  ngOnInit() {
+
+    this._nivestService.getUsers().subscribe((data: any) => this.users = data)
+    
+  }
 
 }

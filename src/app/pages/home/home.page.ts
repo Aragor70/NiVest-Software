@@ -49,6 +49,7 @@ export class HomePage {
       ],
       background: '/assets/pexels-henry.jpg',
       url: '/overview',
+      selector: 'app-overview',
       large: false
     },
     {
@@ -64,6 +65,7 @@ export class HomePage {
       ],
       background: '/assets/IMAG0527.jpg',
       url: '/software_development',
+      selector: 'app-software-development',
       large: true
     },
     {
@@ -79,6 +81,7 @@ export class HomePage {
       ],
       background: '/assets/pexels-chair.jpg',
       url: '/algorithms',
+      selector: 'app-nivest-for-education',
       large: true
     },
     {
@@ -94,11 +97,20 @@ export class HomePage {
       ],
       background: '/assets/IMG-20200205-WA0000.jpg',
       url: '/about_us',
+      selector: 'app-insider',
       large: false
     },
 
   ]
 
   constructor() {}
+
+  scroll(id: any) {
+    console.log(`scrolling to ${id}`);
+    let el = document.querySelector(id);
+    el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    //window.scrollTo(el.yPosition)
+    //el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
 
 }

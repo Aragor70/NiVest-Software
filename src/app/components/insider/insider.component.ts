@@ -11,8 +11,8 @@ export class InsiderComponent implements OnInit {
   fancyCards: any[] = [
 
     {
-      title: 'Mobile App Development',
-      sub_title: 'We are able to deliver a custom mobile app',
+      title: 'Registration',
+      sub_title: 'Be a host of benefits, promotions, and events',
       icon: '',
       imgs: [
         '/assets/fancy/logo.png',
@@ -26,8 +26,8 @@ export class InsiderComponent implements OnInit {
       large: false
     },
     {
-      title: 'Hybrid Applications',
-      sub_title: 'We are able to deliver a custom mobile app',
+      title: 'Support',
+      sub_title: 'Customized services tailored for you',
       icon: '',
       imgs: [
         '/assets/fancy/logo.png',
