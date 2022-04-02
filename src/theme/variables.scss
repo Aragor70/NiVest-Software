@@ -81,6 +81,8 @@
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+
+  
 }
 
 @media (prefers-color-scheme: dark) {
@@ -90,6 +92,8 @@
    */
 
   body {
+
+    
     --ion-color-primary: #428cff;
     --ion-color-primary-rgb: 66,140,255;
     --ion-color-primary-contrast: #ffffff;
@@ -152,7 +156,10 @@
     --ion-color-light-contrast-rgb: 255,255,255;
     --ion-color-light-shade: #1e2023;
     --ion-color-light-tint: #383a3e;
+
+    
   }
+
 
   /*
    * iOS Dark Theme
@@ -386,15 +393,34 @@ a
 
 ion-header
 {
-  height:60px;
-  --height:60px;
-  --min-height: 60px;
-  min-height:60px;
-  --max-height: 60px;
-  max-height: 60px;
-  background:#C8102E;
-  --background:#C8102E;
+  height:78px;
+  --height:78px;
+  --min-height: 78px;
+  min-height:78px;
+  --max-height: 78px;
+  max-height: 78px;
+  
+  background:#fff;
+  --background:#fff;
+  border-bottom: 7.5px solid #C8102E;
 }
+
+ion-header > section {
+  height: 100%;
+
+  div {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    width: max-content;
+  }
+  ion-text {
+    
+    width: max-content;
+
+  }
+}
+
 ion-footer
 {
   height:60px;
@@ -636,5 +662,100 @@ app-statistic-table {
       
       margin-left: auto;
       margin-right: auto;
+  }
+}
+
+
+app-home {
+
+  margin-left: auto;
+  margin-right: auto;
+
+  ion-header {
+
+    > section {
+      max-width: 1920px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  ion-content {
+
+    > * {
+      max-width: 1920px !important;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    * {
+      ::ng-deep {
+
+        max-width: 1920px !important;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+    
+
+    article {
+      width: 100%;
+    }
+  
+  }
+}
+
+
+
+ion-header {
+
+  section {
+    width: 100% !important;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    --padding-start: 0 !important;
+    --padding-end: 0 !important;
+
+
+    @media (min-width: 1023px) {
+
+      padding: 0 20px;
+      
+    }
+    ion-label {
+      
+      padding: 0;
+      margin-left: auto;
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      column-gap: 40px;
+
+      @media (max-width: 500px) {
+
+        display: none;
+        
+      }
+
+      > div {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 7.5px;
+      }
+
+      ion-text {
+        display: none;
+        @media (min-width: 1023px) {
+
+          display: block;
+          
+        }
+      }
+    }
+
   }
 }

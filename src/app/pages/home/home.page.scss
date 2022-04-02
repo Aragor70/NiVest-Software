@@ -1,13 +1,4 @@
 
-ion-header {
-
-  ion-item {
-    cursor: pointer;
-
-    width: max-content;
-  }
-}
-
 section {
   padding: 0 40px;
   contain: none;
@@ -305,55 +296,3 @@ section {
 }
 
 
-ion-header {
-
-  ion-item {
-    width: 100% !important;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-    --padding-start: 0 !important;
-    --padding-end: 0 !important;
-
-
-    @media (min-width: 1023px) {
-
-      padding: 0 20px;
-      
-    }
-    ion-label {
-      
-      padding: 0;
-      margin-left: auto;
-      width: 100%;
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      column-gap: 40px;
-
-      @media (max-width: 500px) {
-
-        display: none;
-        
-      }
-
-      > div {
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        column-gap: 7.5px;
-      }
-
-      ion-text {
-        display: none;
-        @media (min-width: 1023px) {
-
-          display: block;
-          
-        }
-      }
-    }
-
-  }
-}
