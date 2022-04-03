@@ -668,8 +668,6 @@ app-statistic-table {
 
 app-home {
 
-  margin-left: auto;
-  margin-right: auto;
 
   ion-header {
 
@@ -683,20 +681,16 @@ app-home {
   ion-content {
 
     > * {
-      max-width: 1920px !important;
+      max-width: 1920px;
       margin-left: auto;
       margin-right: auto;
     }
-
-    * {
-      ::ng-deep {
-
-        max-width: 1920px !important;
-        margin-left: auto;
-        margin-right: auto;
-      }
+    section {
+      max-width: 1920px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0 40px;
     }
-    
 
     article {
       width: 100%;
