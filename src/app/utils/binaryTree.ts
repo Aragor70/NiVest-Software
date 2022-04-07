@@ -86,19 +86,16 @@ function Node(value: any) {
     }
 }
 
-
+export const arry: number[] = [ 5, 3, 2, 4, 7, 1 ];
 
 export const setup = () => {
 
 
     const tree = new Tree;
 
-    tree.addValue( 5 )
-    tree.addValue( 3 )
-    tree.addValue( 2 )
-    tree.addValue( 4 )
-    tree.addValue( 7 )
-    tree.addValue( 1 )
+    for (let i = 0; i < arry.length; i++) {
+        tree.addValue( arry[i] )
+    }
     console.log(tree)
     return tree;
 }

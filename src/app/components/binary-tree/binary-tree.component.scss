@@ -1,20 +1,18 @@
 
 .tree
 {
-    width: 10vw;
+    width: 72px;
     height: 72px;
     z-index: 11;
 
     position: absolute;
-    top: 144px;
+    top: 18px;
     right: 144px;
-    display: none;
-
-    @media (min-width: 1023px) {
-
-        display: block;
-
-    }
     
 
+}
+:host {
+    position: relative;
+    height: 450px;
+    width: 100%;
 }

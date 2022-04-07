@@ -1,0 +1,14 @@
+<ion-card>
+  <ion-card-content>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col *ngFor="let element of numbers">
+          <app-number-field [value]="element"></app-number-field>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </ion-card-content>
+  
+</ion-card>
