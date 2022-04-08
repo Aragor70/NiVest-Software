@@ -32,7 +32,7 @@
         <ion-item lines="none">
         </ion-item>
         <ion-item lines="none">
-          <app-arry-card></app-arry-card>
+          <app-arry-card [sorting]="quickSort"></app-arry-card>
         </ion-item>
       </ion-card-content>
 
@@ -46,7 +46,7 @@
           </ion-title>
       </ion-card-header>
       
-      <ion-card-content>
+      <ion-card-content class="tree-card">
         <ion-item lines="none">
           <ion-text>
             Each tree node has at most two children, which are referred to as the left child and the right child.

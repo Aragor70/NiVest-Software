@@ -405,7 +405,7 @@ ion-header
   border-bottom: 7.5px solid #C8102E;
 }
 
-ion-header > section {
+ion-header > * {
   height: 100%;
 
   div {
@@ -673,13 +673,11 @@ app-statistic-table {
 app-home {
 
 
-  ion-header {
+  ion-header > * {
 
-    > section {
       max-width: 1920px;
       margin-left: auto;
       margin-right: auto;
-    }
   }
 
   ion-content {
@@ -707,7 +705,7 @@ app-home {
 
 ion-header {
 
-  section {
+  > * {
     width: 100% !important;
     padding: 0;
     display: flex;
@@ -756,4 +754,8 @@ ion-header {
     }
 
   }
+}
+
+ion-title {
+  min-height: 55px;
 }

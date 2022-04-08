@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, HostListener, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-tree-node',
@@ -12,11 +12,20 @@ export class TreeNodeComponent implements OnInit {
   @Input() stylesY: any;
   @Input() level: any;
 
+  public innerWidth: number;
+
 
   constructor() {
 
   }
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.innerWidth = window.innerWidth;
+  }
+
+  @HostListener('window:resize', ['$event'])
+onResize() {
+  this.innerWidth = window.innerWidth;
+}
 
 }

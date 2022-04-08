@@ -1,18 +1,32 @@
 
 .tree
 {
-    width: 72px;
+    width: 225px;
     height: 72px;
     z-index: 11;
 
     position: absolute;
     top: 18px;
-    right: 144px;
+    right: 0;
     
+    @media (max-width: 768px) {
+        
+        width: 90px;
+        
+        right: 55px;
+    }    
+    @media (min-width: 1023px) {
+        
+        right: 0;
+    }
+    @media (min-width: 1300px) {
+        
+        right: 15.5%;
+    }
 
 }
 :host {
     position: relative;
-    height: 450px;
+    height: 390px;
     width: 100%;
 }

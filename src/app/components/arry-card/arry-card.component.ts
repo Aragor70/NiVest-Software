@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { arry } from 'src/app/utils/binaryTree';
 
 @Component({
@@ -9,13 +9,15 @@ import { arry } from 'src/app/utils/binaryTree';
 export class ArryCardComponent implements OnInit {
 
   numbers: number[] = [];
+  
   constructor() { }
-
+  
+  @Input() sorting: any;
 
   ngOnInit() {
-    this.numbers = arry;
-
-    console.log(arry)
+    this.numbers = this.sorting ? this.sorting(arry) : arry;
+    
+    console.log(this.numbers)
   }
 
 }

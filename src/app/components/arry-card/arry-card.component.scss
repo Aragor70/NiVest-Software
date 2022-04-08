@@ -1,6 +1,9 @@
 :host {
     width: 100%;
     display: flex;
+    min-height: 230px;
+    align-items: center;
+    
 }
 ion-card-content {
     display: flex;
@@ -9,4 +12,8 @@ ion-card-content {
 ion-col {
     text-align: center;
     font-size: 22px;
+}
+
+ion-card, .card-ios, .card-md {
+    box-shadow: none !important;
 }

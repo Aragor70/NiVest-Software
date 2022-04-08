@@ -1,0 +1,15 @@
+  <div (click)="scroll('.dashboard')">
+    <ion-text color="primary">Ni</ion-text>
+      
+    <ion-text color="secondary">Vest Software</ion-text>
+
+  </div>
+  <ion-label>
+
+    <div *ngFor="let element of elements" (click)="scroll(element.selector)">
+      <ion-icon size="large" name="{{element.icon}}"></ion-icon>
+      <ion-text>{{ element.title }}</ion-text>
+    </div>
+
+    
+  </ion-label>

@@ -5,5 +5,8 @@
 
   </div>
   
-  <app-tree-node *ngIf="props.left" [stylesX]="stylesX - 90" [stylesY]="stylesY + 90" [level]="level + 1"[props]="props.left"></app-tree-node>
-  <app-tree-node *ngIf="props.right" [stylesX]="stylesX + 90" [stylesY]="stylesY + 90" [level]="level + 1" [props]="props.right"></app-tree-node>
+  <app-tree-node *ngIf="props.left" [stylesX]="innerWidth > 768 ? stylesX - 90 : stylesX - 55" [stylesY]="innerWidth > 768 ? stylesY + 90 : stylesY + 55" [level]="level + 1"[props]="props.left"></app-tree-node>
+  <app-tree-node *ngIf="props.right" [stylesX]="innerWidth > 768 ? stylesX + 90 : stylesX + 55" [stylesY]="innerWidth > 768 ? stylesY + 90 : stylesY + 55" [level]="level + 1" [props]="props.right"></app-tree-node>
+
+
+  <!-- 45 -->

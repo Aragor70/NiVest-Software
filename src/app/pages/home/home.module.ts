@@ -22,6 +22,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { StatisticTableComponent } from 'src/app/components/statistic-table/statistic-table.component';
 import { ArryCardComponent } from 'src/app/components/arry-card/arry-card.component';
 import { NumberFieldComponent } from 'src/app/components/number-field/number-field.component';
+import { HeaderPageComponent } from 'src/app/components/header-page/header-page.component';
 
 
 @NgModule({
@@ -35,6 +36,6 @@ import { NumberFieldComponent } from 'src/app/components/number-field/number-fie
   providers: [
     NivestService
   ],
-  declarations: [HomePage, TodoComponent, FancyCardComponent, BinaryTreeComponent, TreeNodeComponent, CircularButtonComponent, SubFancyCardComponent, IconGroupComponent, OverviewComponent, SoftwareDevelopmentComponent, NivestForEducationComponent, InsiderComponent, PersonalCardComponent, StatisticTableComponent, ArryCardComponent, NumberFieldComponent]
+  declarations: [HomePage, TodoComponent, FancyCardComponent, BinaryTreeComponent, TreeNodeComponent, CircularButtonComponent, SubFancyCardComponent, IconGroupComponent, OverviewComponent, SoftwareDevelopmentComponent, NivestForEducationComponent, InsiderComponent, PersonalCardComponent, StatisticTableComponent, ArryCardComponent, NumberFieldComponent, HeaderPageComponent]
 })
 export class HomePageModule {}

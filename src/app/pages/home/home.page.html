@@ -1,32 +1,8 @@
 
 
 <ion-header [translucent]="true">
-    <section>
-      <div (click)="scroll('.dashboard')">
-        <ion-text color="primary">Ni</ion-text>
-          
-        <ion-text color="secondary">Vest Software</ion-text>
-
-      </div>
-      <ion-label>
-        <div (click)="scroll(fancyCards[0].selector)">
-          <ion-icon size="large" name="analytics-outline"></ion-icon>
-          <ion-text>Overview</ion-text>
-        </div>
-        <div (click)="scroll(fancyCards[1].selector)">
-          <ion-icon size="large" name="layers-outline"></ion-icon>
-          <ion-text>Software development</ion-text>
-        </div>
-        <div (click)="scroll(fancyCards[2].selector)">
-          <ion-icon size="large" name="color-filter-outline"></ion-icon>
-          <ion-text>NiVest for education</ion-text>
-        </div>
-        <div (click)="scroll(fancyCards[3].selector)">
-          <ion-icon size="large" name="accessibility-outline"></ion-icon>
-          <ion-text>Insider</ion-text>
-        </div>
-      </ion-label>
-    </section>
+    
+  <app-header-page [elements]="fancyCards"></app-header-page>
 
 </ion-header>
 
@@ -36,6 +12,7 @@
 
 
   <app-circular-button></app-circular-button>
+  <button [routerLink]="'/login'">login</button>
 
   <ion-list class="dashboard__welcome">
 

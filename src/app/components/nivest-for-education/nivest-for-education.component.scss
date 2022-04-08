@@ -19,6 +19,8 @@ article {
 
     ion-card, .card-ios, .card-md {
         box-shadow: none !important;
+        
+        contain: none;
     }
     
     
@@ -35,6 +37,18 @@ article {
 
     }
 
+        
+    ion-card-content.tree-card {
+
+        @media (max-width: 1023px) {
+        
+            display: flex;
+            flex-direction: column;
+        }
+        
+        contain: none;
+
+    }
     
 
 }

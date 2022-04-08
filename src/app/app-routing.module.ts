@@ -11,10 +11,10 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
-  /* {
-    path: 'algorithms',
-    loadChildren: () => import('./pages/algorithms/algorithms.module').then( m => m.AlgorithmsPageModule)
-  }, */
+  {
+    path: 'login',
+    loadChildren: () => import('./pages/auth/auth.module').then( m => m.AuthPageModule)
+  },
 ];
 
 @NgModule({

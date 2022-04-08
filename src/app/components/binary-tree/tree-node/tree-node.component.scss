@@ -10,4 +10,11 @@
     font-weight: 900;
     outline: 2px solid #012169;
 
+    @media (max-width: 768px) {
+        
+        width: 45px;
+        height: 45px;
+        
+    }
+
 }

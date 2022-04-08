@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import quickSort from 'src/app/utils/quickSort';
 
 @Component({
   selector: 'app-nivest-for-education',
@@ -10,5 +11,7 @@ export class NivestForEducationComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {}
+
+  quickSort = quickSort;
 
 }
