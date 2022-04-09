@@ -670,7 +670,7 @@ app-statistic-table {
 }
 
 
-app-home {
+app-home, app-auth {
 
 
   ion-header > * {
@@ -758,4 +758,8 @@ ion-header {
 
 ion-title {
   min-height: 55px;
+}
+
+ion-input {
+  padding: 5.5px;
 }

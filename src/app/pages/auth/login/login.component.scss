@@ -1,0 +1,29 @@
+
+
+
+
+form {
+    display: grid;
+    row-gap: 20px;
+}
+
+
+ion-input {
+    outline: 1px solid #012169;
+    border-radius: 5px;
+}
+
+:host {
+    
+    
+    @media (min-width: 768px) {
+        
+        padding: 20px;
+    }
+}
+
+ion-button {
+    width: 50%;
+    height: 80% !important;
+    min-width: max-content;
+}
