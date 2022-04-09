@@ -12,7 +12,10 @@ import { AuthService } from 'src/app/services/auth/auth.service';
 export class LoginComponent implements OnInit {
 
 
-  ngOnInit() {}
+  ngOnInit() {
+    
+    console.log(this._loginForm)
+  }
 
   public _loginForm: FormGroup;
   url = '/auth';
@@ -23,9 +26,8 @@ export class LoginComponent implements OnInit {
     private formBuilder: FormBuilder, 
     private http: HttpClient,
     private router: Router,
-    private authService: AuthService
   ) { 
-    this.formBuilder.group({
+    this._loginForm = this.formBuilder.group({
       email: [
           '',
           Validators.compose([Validators.required])
@@ -38,6 +40,7 @@ export class LoginComponent implements OnInit {
   }
 
   login() {
+    console.log(this._loginForm)
     this.http.post('/auth', {
       email: this._loginForm.value.email,
       password: this._loginForm.value.password,

@@ -12,7 +12,7 @@ import todoReducer from './reducers/todo.reducer';
 import binaryTreeReducer from './reducers/binary-tree.reducer';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { environment } from 'src/environments/environment';
-
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [AppComponent],
@@ -23,6 +23,7 @@ import { environment } from 'src/environments/environment';
     AppRoutingModule,
     StoreModule.forRoot({ tree: binaryTreeReducer }),
     environment.production ? [] : StoreDevtoolsModule.instrument(),
+    HttpClientModule
   ],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
