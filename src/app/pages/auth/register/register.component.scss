@@ -6,16 +6,23 @@
 form {
     display: grid;
     row-gap: 20px;
+    width: 100%;
 }
 
 ion-input {
     outline: 1px solid #012169;
     border-radius: 5px;
+    --padding-start: 35px;
+    --padding-end: 35px;
+    --padding-top: 20px;
+    font-size: 22px;
+    letter-spacing: 1.2px;
 }
 
 
 :host {
-    
+    display: flex;
+    align-items: center;
     
     @media (min-width: 768px) {
         
@@ -29,4 +36,10 @@ ion-button {
     height: 80% !important;
     
     min-width: max-content;
+}
+
+form {
+    h2 {
+        font-size: 42px;
+    }
 }

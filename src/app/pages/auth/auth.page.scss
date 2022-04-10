@@ -10,5 +10,21 @@
         display: grid;
         grid-template-columns: calc(50% - 20px) calc(50% - 20px);
         gap: 40px;
+
+        ion-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     }
+
+    @media (max-width: 1023px) {
+        ion-item {
+            display: none;
+        }
+    }
+
+    
+    position: relative;
+
 }
