@@ -19,6 +19,8 @@ export class AuthService {
       const accessToken = localStorage.getItem('accessToken');
       const token = accessToken ? accessToken : "";
       const helper = new JwtHelperService();
+
+      return !helper.isTokenExpired(token);
     } catch (err: any) {
       return false;
     }
