@@ -11,8 +11,8 @@
 <section class="dashboard">
 
 
-  <app-circular-button></app-circular-button>
-  <button [routerLink]="'/login'">login</button>
+  <app-circular-button [props]="projectButton"></app-circular-button>
+  <app-circular-button [props]="companyButton" [routerLink]="'/login'"></app-circular-button>
 
   <ion-list class="dashboard__welcome">
 

@@ -1,7 +1,7 @@
-<ion-label class="label">
+<ion-label class="label" [ngClass]="props.position.absolute ? 'isAbsolute' : ''" [ngStyle]="props.position ? props.position : ''">
   
   <ion-label color="none">
-    <ion-text color="secondary">Case studies</ion-text>
+    <ion-text>{{props.value}}</ion-text>
   </ion-label>
 
 </ion-label>

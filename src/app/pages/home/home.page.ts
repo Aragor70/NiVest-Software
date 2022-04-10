@@ -6,6 +6,23 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+
+  projectButton: any = {
+    value: 'Case Studies',
+    position: {
+      absolute: true,
+      top: '16px',
+      right: '16px'
+    },
+  }
+  companyButton: any = {
+    value: 'Business Dasboard',
+    position: {
+      absolute: true,
+      top: '124px',
+      right: '16px'
+    },
+  }
   
   iconsDashboard: any[] = [
     {
