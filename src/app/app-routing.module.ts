@@ -12,6 +12,11 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
+    path: 'dashboard',
+    redirectTo: 'home',
+    pathMatch: 'full'
+  },
+  {
     path: 'login',
     loadChildren: () => import('./pages/auth/auth.module').then( m => m.AuthPageModule)
   },

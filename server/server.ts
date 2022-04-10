@@ -6,11 +6,20 @@ import errorHandler from './middlewares/error';
 
 import authRouter from './routes/api/auth'
 import usersRouter from './routes/api/users'
+import cors from 'cors';
 
 const app:Application = express();
 
 // connect mongodb
 connect();
+
+const corsOptions = {
+    origin: "*",
+    credentials: true,
+    methods: ['GET', 'POST', 'OPTIONS', 'PUT', 'DELETE']
+};
+
+app.use(cors(corsOptions));
 
 // allow to use json format
 app.use(express.json(<any>{ extended: false }))

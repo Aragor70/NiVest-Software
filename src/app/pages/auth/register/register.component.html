@@ -1,32 +1,32 @@
-<form>
+<form [formGroup]="_registerForm" (ngSubmit)="register()">
   <h2>Create Account</h2>
-  <ion-label>
+  <ion-label for="company">
     <ion-text>
       Company
     </ion-text>
-    <ion-input></ion-input>
+    <ion-input formControlName="company" type="text"></ion-input>
   </ion-label>
-  <ion-label>
+  <ion-label for="email">
     <ion-text>
       E-mail address
     </ion-text>
-    <ion-input></ion-input>
+    <ion-input formControlName="email" type="text"></ion-input>
   </ion-label>
-  <ion-label>
+  <ion-label for="password">
     <ion-text>
       Password
     </ion-text>
-    <ion-input></ion-input>
+    <ion-input formControlName="password" type="password"></ion-input>
   </ion-label>
-  <ion-label>
+  <ion-label for="confirmPassword">
     <ion-text>
       Confirm Password
     </ion-text>
-    <ion-input></ion-input>
+    <ion-input formControlName="confirmPassword" type="password"></ion-input>
   </ion-label>
   <ion-item lines="none">
     
-    <ion-button slot="end" class="extra-bold">
+    <ion-button type="submit" slot="end" class="extra-bold">
       Register
     </ion-button>
   </ion-item>

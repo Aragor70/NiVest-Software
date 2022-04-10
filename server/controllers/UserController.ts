@@ -13,8 +13,11 @@ class UserController {
 
     register = asyncHandler( async (req: Request, res: Response, next: NextFunction) => {
     
-        const { name, email, password } = req.body;
-    
+        const { company, email, password, confirmPassword } = req.body;
+        
+        if (password !== confirmPassword) {
+            return next(new ErrorResponse('Passwords are not equal.', 422))
+        }
         let user: any = await User.findOne(({ email }))
     
         if (user) {
@@ -28,10 +31,10 @@ class UserController {
         //  size, rating, default image
         });
     
-        const userName = name || email.slice(0, email.indexOf('@'));
+        const userName = company || email.slice(0, email.indexOf('@'));
     
         user = new User({
-            name: userName,
+            company: userName,
             email,
             avatar,
             password
@@ -51,11 +54,11 @@ class UserController {
         }
         const JWTSecretKey: any = process.env["jwtSecret"]
         return jwt.sign(payload, JWTSecretKey, { expiresIn: 360000 },
-            (err, token) => {
+            (err, accessToken) => {
                 if(err) {
                     return next(new ErrorResponse(err.message, 422))
                 }
-                res.json({ success: true, token }); 
+                res.json({ success: true, accessToken }); 
                 
         });
            

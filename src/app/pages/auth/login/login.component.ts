@@ -12,13 +12,8 @@ import { AuthService } from 'src/app/services/auth/auth.service';
 export class LoginComponent implements OnInit {
 
 
-  ngOnInit() {
-    
-    console.log(this._loginForm)
-  }
-
   public _loginForm: FormGroup;
-  url = '/auth';
+  url = 'http://localhost:5000/auth';
   accessToken : string | null = '';
 
 
@@ -26,6 +21,7 @@ export class LoginComponent implements OnInit {
     private formBuilder: FormBuilder, 
     private http: HttpClient,
     private router: Router,
+    private authService: AuthService
   ) { 
     this._loginForm = this.formBuilder.group({
       email: [
@@ -39,9 +35,21 @@ export class LoginComponent implements OnInit {
     })
   }
 
+  
+  ngOnInit(): void {
+    if (this.authService.isAuthenticated()) {
+      this.router.navigateByUrl('/dashboard')
+    }
+  }
+
+  ionViewWillEnter(): void {
+    this.accessToken = localStorage.getItem('accessToken')
+  }
+
+
   login() {
     console.log(this._loginForm)
-    this.http.post('/auth', {
+    this.http.post('http://localhost:5000/api/auth', {
       email: this._loginForm.value.email,
       password: this._loginForm.value.password,
     }).subscribe((res: any) => {

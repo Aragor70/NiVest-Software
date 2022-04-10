@@ -1,4 +1,8 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
+import { AuthService } from 'src/app/services/auth/auth.service';
 
 @Component({
   selector: 'app-register',
@@ -6,9 +10,61 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./register.component.scss'],
 })
 export class RegisterComponent implements OnInit {
+  
+  _registerForm: FormGroup;
 
-  constructor() { }
+  url = '/users';
+  accessToken : string | null = '';
 
-  ngOnInit() {}
+  constructor(
+    private formBuilder: FormBuilder, 
+    private http: HttpClient,
+    private router: Router,
+    private authService: AuthService
+  ) {
+    this._registerForm = this.formBuilder.group({
+      company: [
+          '',
+          Validators.required
+      ],
+      email: [
+          '',
+          Validators.required
+      ],
+      password: [
+          '',
+          Validators.required
+        ],
+      confirmPassword: [
+          '',
+          Validators.required
+        ]
+    })
+  }
+
+  ngOnInit() {
+    if (this.authService.isAuthenticated()) {
+      this.router.navigateByUrl('/dashboard')
+    }
+  }
+
+  ionViewWillEnter(): void {
+    this.accessToken = localStorage.getItem('accessToken')
+  }
+
+
+  register() {
+    this.http.post('http://localhost:5000/api/users', {
+      company: this._registerForm.value.company,
+      email: this._registerForm.value.email,
+      password: this._registerForm.value.password,
+      confirmPassword: this._registerForm.value.confirmPassword,
+    }).subscribe((res: any) => {
+      console.log(res)
+      localStorage.setItem('accessToken', res.accessToken);
+      this.accessToken = localStorage.getItem('accessToken');
+      this.router.navigateByUrl('/dashboard')
+    })
+  }
 
 }
