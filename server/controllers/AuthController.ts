@@ -33,11 +33,11 @@ class AuthControlller {
         }
         const JWTSecretKey: any = process.env["jwtSecret"]
         return jwt.sign(payload, JWTSecretKey, { expiresIn: 360000 },
-            (err, token) => {
+            (err, accessToken) => {
                 if(err) {
                     return next(new ErrorResponse(err.message, 422))
                 }
-                res.json({ success: true, token }); 
+                res.json({ success: true, accessToken }); 
                 
         });
     
