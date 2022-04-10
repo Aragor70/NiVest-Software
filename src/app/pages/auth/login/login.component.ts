@@ -19,7 +19,6 @@ export class LoginComponent implements OnInit {
 
   constructor(
     private formBuilder: FormBuilder, 
-    private http: HttpClient,
     private router: Router,
     private authService: AuthService
   ) { 
@@ -48,11 +47,11 @@ export class LoginComponent implements OnInit {
 
 
   login() {
-    console.log(this._loginForm)
-    this.http.post('http://localhost:5000/api/auth', {
+    const values = {
       email: this._loginForm.value.email,
       password: this._loginForm.value.password,
-    }).subscribe((res: any) => {
+    }
+    this.authService.loginAttempt(values).subscribe((res: any) => {
       localStorage.setItem('accessToken', res.accessToken);
       this.accessToken = localStorage.getItem('accessToken');
       this.router.navigateByUrl('/dashboard')

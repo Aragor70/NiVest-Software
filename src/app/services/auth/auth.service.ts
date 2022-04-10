@@ -24,5 +24,12 @@ export class AuthService {
     }
   }
 
+  public loginAttempt = (values) => {
+    return this.http.post('http://localhost:5000/api/auth', values);
+  }
+  public registerAttempt = (values) => {
+    return this.http.post('http://localhost:5000/api/users', values);
+  }
+
 
 }

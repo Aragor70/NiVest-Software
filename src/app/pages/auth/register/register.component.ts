@@ -18,7 +18,6 @@ export class RegisterComponent implements OnInit {
 
   constructor(
     private formBuilder: FormBuilder, 
-    private http: HttpClient,
     private router: Router,
     private authService: AuthService
   ) {
@@ -54,13 +53,13 @@ export class RegisterComponent implements OnInit {
 
 
   register() {
-    this.http.post('http://localhost:5000/api/users', {
+    const values = {
       company: this._registerForm.value.company,
       email: this._registerForm.value.email,
       password: this._registerForm.value.password,
       confirmPassword: this._registerForm.value.confirmPassword,
-    }).subscribe((res: any) => {
-      console.log(res)
+    }
+    this.authService.registerAttempt(values).subscribe((res: any) => {
       localStorage.setItem('accessToken', res.accessToken);
       this.accessToken = localStorage.getItem('accessToken');
       this.router.navigateByUrl('/dashboard')
