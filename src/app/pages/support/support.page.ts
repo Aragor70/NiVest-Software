@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-dashboard',
-  templateUrl: './dashboard.page.html',
-  styleUrls: ['./dashboard.page.scss'],
+  selector: 'app-support',
+  templateUrl: './support.page.html',
+  styleUrls: ['./support.page.scss'],
 })
-export class DashboardPage implements OnInit {
+export class SupportPage implements OnInit {
 
   
   fancyCards: any[] = [
@@ -75,12 +75,10 @@ export class DashboardPage implements OnInit {
       large: false
     }
   ]
-
+  
   constructor() { }
 
   ngOnInit() {
   }
-
-
 
 }

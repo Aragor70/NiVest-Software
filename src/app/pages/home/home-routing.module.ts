@@ -7,10 +7,6 @@ const routes: Routes = [
     path: '',
     component: HomePage,
   },
-  {
-    path: 'dashboard',
-    component: HomePage,
-  }
 ];
 
 @NgModule({
