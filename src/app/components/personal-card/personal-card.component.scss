@@ -1,3 +1,6 @@
+section {
+    padding: 0;
+}
 ion-card {
     padding: 40px;
     width: max-content;
@@ -5,11 +8,21 @@ ion-card {
     flex-direction: column;
     border-radius: 25px;
     margin: 0 auto;
+    max-width: 100%;
 
     ion-label.picture {
         border-radius: 25px !important;
         overflow: hidden;
         width: 225px;
+    }
+
+    a {
+        
+        font-weight: 900;
+        font-size: 16px;
+        line-height: 1.6;
+        color: #737373;
+        text-decoration: none;
     }
 }
 ion-card > * {

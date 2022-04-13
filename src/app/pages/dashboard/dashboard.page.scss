@@ -2,11 +2,44 @@
 
 .dashboard {
     width: 100%;
-    height: calc(70vh - 60px);
+    height: calc(60vh - 60px);
     display: flex;
+    padding: 80px;
 
     border-radius: 0 0 25px 25px;
+    /* background-color: #C8102E; */
+    position: relative;
 
+    &::before {
+        content: '';
+        position: absolute;
+        top: -100px;
+        left: -100px;
+        right: -100px;
+        bottom: 0;
 
-    background-color: red;
+        height: calc(100% + 100px);
+        
+        background-color: #C8102E;
+
+        transform: rotate(-5deg);
+    }
+}
+
+.user-headline {
+    margin-bottom: auto;
+    background: transparent;
+
+    ion-text {
+        color: #fff;
+        
+    }
+    ion-card-header ion-text {
+            
+        font-size: 32px;
+    }
+    ion-card-content ion-text {
+            
+        font-size: 22px;
+    }
 }

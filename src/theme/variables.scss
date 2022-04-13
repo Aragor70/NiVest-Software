@@ -763,3 +763,8 @@ ion-title {
 ion-input {
   padding: 5.5px;
 }
+
+ion-text {
+  word-wrap: break-word !important;
+  white-space: normal !important;
+}
