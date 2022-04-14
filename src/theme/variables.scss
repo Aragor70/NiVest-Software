@@ -758,6 +758,7 @@ ion-header {
 
 ion-title {
   min-height: 55px;
+  font-family: Montserrat,sans-serif !important;
 }
 
 ion-input {
@@ -767,4 +768,6 @@ ion-input {
 ion-text {
   word-wrap: break-word !important;
   white-space: normal !important;
+  
+  font-family: Montserrat,sans-serif !important;
 }

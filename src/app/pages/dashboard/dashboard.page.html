@@ -18,6 +18,11 @@
         </ion-text>
       </ion-card-content>
     </ion-card>
+    <ion-label class="user-headline">
+      <ion-text class="extra-bold">
+        NiVest Software
+      </ion-text>
+    </ion-label>
     
     <!-- <ion-item class="left">
       <ion-text>
@@ -38,4 +43,102 @@
   
   </section>
 
+  <section class="entry">
+    <nav>
+      <ion-list class="left">
+        <ion-label class="logo">
+          <ion-text>
+            NiVest Software
+          </ion-text>
+        </ion-label>
+        <ion-item (click)="setPage('DASHBOARD')">
+          <ion-text>
+            DASHBOARD
+          </ion-text>
+        </ion-item>
+        <ion-item (click)="setPage('EDIT PROFILE')">
+          <ion-text>
+            EDIT PROFILE
+          </ion-text>
+        </ion-item>
+        <ion-item (click)="setPage('YOUR SERVICES')">
+          <ion-text>
+            YOUR SERVICES
+          </ion-text>
+        </ion-item>
+        <ion-item (click)="setPage('SUPPORT AND FAQ')">
+          <ion-text>
+            SUPPORT AND FAQ
+          </ion-text>
+        </ion-item>
+        <ion-item (click)="setPage('SETTINGS')">
+          <ion-text>
+            SETTINGS
+          </ion-text>
+        </ion-item>
+        <ion-item (click)="setPage('EDIT PROFILE')">
+          <ion-text>
+            LOG OUT
+          </ion-text>
+        </ion-item>
+      </ion-list>
+    </nav>
+    <article *ngIf="!page || page=='DASHBOARD'">
+      <section class="headline-content ion-items-center">
+  
+        <ion-title>
+      
+          <ion-text>
+            DASHBOARD
+          </ion-text>
+          
+        </ion-title>
+      
+      </section>
+      <ion-card class="left">
+        <ion-card-header>
+          <ion-card-title>
+            <ion-text class="extra-bold">
+              What can we help you with today?
+            </ion-text>
+          </ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-list>
+            <ion-item lines="none">
+              <ion-text>
+                How to build a success with NiVest Software?
+              </ion-text>
+            </ion-item>
+            <ion-item lines="none">
+              <ion-text>
+                How to start the first service?
+              </ion-text>
+            </ion-item>
+          </ion-list>
+        </ion-card-content>
+      </ion-card>
+      
+    </article>
+
+    <article *ngIf="page==='EDIT PROFILE'">
+      <section class="headline-content ion-items-center">
+  
+        <ion-title >
+      
+          <ion-text>
+            EDIT PROFILE
+          </ion-text>
+          
+        </ion-title>
+      
+      </section>
+    
+      <section class="edit-profile">
+        
+    
+      </section>
+    </article>
+  </section>
+  
 </ion-content>

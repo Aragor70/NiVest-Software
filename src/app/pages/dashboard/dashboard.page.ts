@@ -76,11 +76,18 @@ export class DashboardPage implements OnInit {
     }
   ]
 
-  constructor() { }
+  public page = null;
+
+  constructor() {
+    this.page = 'DASHBOARD'
+  }
 
   ngOnInit() {
   }
 
+  setPage(value: string) {
+    this.page = value;
+  }
 
 
 }
