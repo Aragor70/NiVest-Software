@@ -678,9 +678,13 @@ app-home, app-auth, app-support, app-dashboard {
       max-width: 1920px;
       margin-left: auto;
       margin-right: auto;
+      
+    --ion-background-color: #FAF7F2;
   }
 
   ion-content {
+    --ion-background-color: #FAF7F2;
+    --ion-item-background: #fff;
 
     > * {
       max-width: 1920px;
@@ -770,4 +774,8 @@ ion-text {
   white-space: normal !important;
   
   font-family: Montserrat,sans-serif !important;
+}
+
+.no-bcg {
+  background: transparent !important;
 }

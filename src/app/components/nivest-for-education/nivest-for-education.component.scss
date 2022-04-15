@@ -8,6 +8,7 @@ article {
     gap: 40px;
     flex-direction: column;
     
+    border-radius: 25px;
     margin: 40px 0;
 
     ion-text {
@@ -21,6 +22,7 @@ article {
         box-shadow: none !important;
         
         contain: none;
+        border-radius: 25px;
     }
     
     
@@ -28,11 +30,24 @@ article {
         display: grid;
         grid-template-columns: calc(50% - 20px) calc(50% - 20px);
         gap: 40px;
+        
+        
 
         @media (max-width: 768px) {
         
             display: flex;
             flex-direction: column;
+        }
+
+        ion-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            @media (min-width: 768px) {
+        
+                padding: 40px;
+            }
         }
 
     }
