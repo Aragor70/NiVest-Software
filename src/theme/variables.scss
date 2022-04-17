@@ -679,12 +679,12 @@ app-home, app-auth, app-support, app-dashboard {
       margin-left: auto;
       margin-right: auto;
       
-    --ion-background-color: #FAF7F2;
+    /* --ion-background-color: #FAF7F2; */
   }
 
   ion-content {
     --ion-background-color: #FAF7F2;
-    --ion-item-background: #fff;
+    /* --ion-item-background: #fff; */
 
     > * {
       max-width: 1920px;

@@ -46,14 +46,7 @@ article.description {
             display: none;
         }
     }
-    @media (min-width: 768px) {
-        
-
-        .font32 {
-            font-size: 32px;
-        }
-
-    }
+    
     ion-card {
         display: flex;
         flex-direction: column;
@@ -124,3 +117,13 @@ ion-card {
         width: 70%;
     }
 }
+
+        
+
+    .font32 {
+        @media (min-width: 768px) {
+
+            font-size: 32px;
+            
+        }
+    }
