@@ -16,8 +16,8 @@ export class AuthService {
 
   public isAuthenticated(): boolean {
     try {
-      const token = localStorage.getItem('token');
-      const token = token ? token : "";
+      const accessToken = localStorage.getItem('token');
+      const token = accessToken ? accessToken : "";
       const helper = new JwtHelperService();
 
       return !helper.isTokenExpired(token);
@@ -26,10 +26,10 @@ export class AuthService {
     }
   }
 
-  public loginAttempt = (values) => {
+  public loginAttempt = (values: any) => {
     return this.http.post('http://139.59.150.253:8080/api/auth/login/', values);
   }
-  public registerAttempt = (values) => {
+  public registerAttempt = (values: any) => {
     return this.http.post('http://139.59.150.253:8080/api/auth/register/', values);
   }
 
