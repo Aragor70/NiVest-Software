@@ -30,7 +30,7 @@ export class AuthService {
   }
 
   registerAccount(user: User): Observable<User> {
-    const { firstName, lastName, email, password } = user;
+    const { firstName, lastName, email, password, company } = user;
 
     return this.doesUserExist(email).pipe(
       tap((doesUserExist: boolean) => {
@@ -49,6 +49,7 @@ export class AuthService {
                 lastName,
                 email,
                 password: hashedPassword,
+                company
               }),
             ).pipe(
               map((user: User) => {
@@ -67,7 +68,7 @@ export class AuthService {
       this.userRepository.findOne(
         { email },
         {
-          select: ['id', 'firstName', 'lastName', 'email', 'password', 'role'],
+          select: ['id', 'firstName', 'lastName', 'email', 'password', 'role', 'company'],
         },
       ),
     ).pipe(

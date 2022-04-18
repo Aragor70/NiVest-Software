@@ -14,7 +14,7 @@ export class RegisterComponent implements OnInit {
   _registerForm: FormGroup;
 
   url = '/users';
-  accessToken : string | null = '';
+  token : string | null = '';
 
   constructor(
     private formBuilder: FormBuilder, 
@@ -37,6 +37,14 @@ export class RegisterComponent implements OnInit {
       confirmPassword: [
           '',
           Validators.required
+        ],
+      firstName: [
+          '',
+          Validators.required
+        ],
+      lastName: [
+          '',
+          Validators.required
         ]
     })
   }
@@ -48,7 +56,7 @@ export class RegisterComponent implements OnInit {
   }
 
   ionViewWillEnter(): void {
-    this.accessToken = localStorage.getItem('accessToken')
+    this.token = localStorage.getItem('token')
   }
 
 
@@ -58,10 +66,12 @@ export class RegisterComponent implements OnInit {
       email: this._registerForm.value.email,
       password: this._registerForm.value.password,
       confirmPassword: this._registerForm.value.confirmPassword,
+      firstName: "",
+      lastName: ""
     }
     this.authService.registerAttempt(values).subscribe((res: any) => {
-      localStorage.setItem('accessToken', res.accessToken);
-      this.accessToken = localStorage.getItem('accessToken');
+      localStorage.setItem('token', res.token);
+      this.token = localStorage.getItem('token');
       this.router.navigateByUrl('/dashboard')
     })
   }

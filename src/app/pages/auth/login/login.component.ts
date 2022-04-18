@@ -14,7 +14,7 @@ export class LoginComponent implements OnInit {
 
   public _loginForm: FormGroup;
   url = 'http://localhost:5000/auth';
-  accessToken : string | null = '';
+  token : string | null = '';
 
 
   constructor(
@@ -42,7 +42,7 @@ export class LoginComponent implements OnInit {
   }
 
   ionViewWillEnter(): void {
-    this.accessToken = localStorage.getItem('accessToken')
+    this.token = localStorage.getItem('token')
   }
 
 
@@ -52,8 +52,8 @@ export class LoginComponent implements OnInit {
       password: this._loginForm.value.password,
     }
     this.authService.loginAttempt(values).subscribe((res: any) => {
-      localStorage.setItem('accessToken', res.accessToken);
-      this.accessToken = localStorage.getItem('accessToken');
+      localStorage.setItem('token', res.token);
+      this.token = localStorage.getItem('token');
       this.router.navigateByUrl('/dashboard')
     })
   }

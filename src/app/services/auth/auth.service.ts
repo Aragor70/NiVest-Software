@@ -10,14 +10,14 @@ export class AuthService {
 
 
   url = 'http://139.59.150.253:8080';
-  accessToken = null;
+  token = null;
 
   constructor(private http: HttpClient) {}
 
   public isAuthenticated(): boolean {
     try {
-      const accessToken = localStorage.getItem('accessToken');
-      const token = accessToken ? accessToken : "";
+      const token = localStorage.getItem('token');
+      const token = token ? token : "";
       const helper = new JwtHelperService();
 
       return !helper.isTokenExpired(token);
