@@ -9,7 +9,7 @@ import { JwtHelperService } from '@auth0/angular-jwt';
 export class AuthService {
 
 
-  url = 'http://localhost:5000';
+  url = 'http://139.59.150.253:8080';
   accessToken = null;
 
   constructor(private http: HttpClient) {}
