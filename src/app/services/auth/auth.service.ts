@@ -27,10 +27,10 @@ export class AuthService {
   }
 
   public loginAttempt = (values) => {
-    return this.http.post('http://localhost:5000/api/auth', values);
+    return this.http.post('http://139.59.150.253:8080/api/auth/login/', values);
   }
   public registerAttempt = (values) => {
-    return this.http.post('http://localhost:5000/api/users', values);
+    return this.http.post('http://139.59.150.253:8080/api/auth/register/', values);
   }
 
 
