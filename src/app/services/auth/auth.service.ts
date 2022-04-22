@@ -27,10 +27,10 @@ export class AuthService {
   }
 
   public loginAttempt = (values: any) => {
-    return this.http.post('http://139.59.150.253:8080/api/auth/login/', values);
+    return this.http.post('https://nivest-software-api.m-prus.uk/api/auth/login/', values);
   }
   public registerAttempt = (values: any) => {
-    return this.http.post('http://139.59.150.253:8080/api/auth/register/', values);
+    return this.http.post('https://nivest-software-api.m-prus.uk/api/auth/register/', values);
   }
 
 
