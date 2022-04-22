@@ -1,8 +1,21 @@
 :host {
     padding: 0 40px;
     contain: none;
+    background: transparent !important;
+    
 }
 
 div {
+    * {
+        font-size: 16px;
+        
+        font-family: "Pontiac", Arial, Helvetica, sans-serif !important;
+        font-weight: 500;
+        letter-spacing: 1.5px;
+    }
     cursor: pointer;
+}
+
+ion-icon {
+    color: #C8102E;
 }

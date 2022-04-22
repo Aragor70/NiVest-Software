@@ -27,7 +27,7 @@ section {
         ion-list {
             padding: 0 !important;
             
-            background-color: #FAF7F2;
+            //background-color: #FAF7F2;
         }
 
         ion-title {
@@ -37,6 +37,13 @@ section {
             @media (min-width: 1023px) {
                 width: 50%;
                 
+            }
+            color: #fff;
+
+            
+            ion-text {
+                    
+                color: #fff;
             }
         }
 

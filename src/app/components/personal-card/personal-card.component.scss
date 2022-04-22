@@ -6,9 +6,11 @@ ion-card {
     width: max-content;
     display: flex;
     flex-direction: column;
-    border-radius: 25px;
+    border-radius: 0 0 0 50px;
     margin: 0 auto;
     max-width: 100%;
+
+    -webkit-box-shadow: -20px 5px 5px 0px #012169 !important;
 
     ion-label.picture {
         border-radius: 25px !important;
@@ -33,7 +35,17 @@ ion-card > * {
     row-gap: 30px;
     padding: 0;
     
+    @media (min-width: 1023px) {
+        
+        padding: 40px;
+        
+    }
+    
 }
 ion-card-header {
     padding: 30px !important;
+}
+
+.name {
+    font-size: 20px;
 }

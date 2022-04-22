@@ -41,6 +41,11 @@ ion-label.fancy-label
   aspect-ratio: 1 / 1;
   border-radius: 25px;
 
+  ion-text {
+    
+    color: #000;
+  }
+
   ion-icon {
     position: absolute;
     top: 7.5px;

@@ -11,6 +11,31 @@ section {
   display: flex;
   align-items: flex-end;
   padding: 20px;
+
+  ion-title {
+    color: #fff;
+  }
+
+  .auth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 40px;
+    margin-bottom: 20px;
+
+
+    background-color: #012169;
+
+    border-radius: 25px;
+
+
+    ion-icon {
+      font-size: 32px;
+      color: #fff;
+    }
+  }
   
   .icon-list {
     contain: none;
@@ -47,7 +72,7 @@ section {
     contain: none;
     margin-bottom: 20px;
     padding: 20px !important;
-    background-color: #FAF7F2;
+    // background-color: #FAF7F2;
     
     .brand-title {
       margin-bottom: 20px;

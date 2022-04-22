@@ -400,9 +400,11 @@ ion-header
   --max-height: 78px;
   max-height: 78px;
   
-  background:#fff;
-  --background:#fff;
+  /* background:#fff;
+  --background:#fff; */
   border-bottom: 7.5px solid #C8102E;
+
+  background-image: url('https://cdn.merixstudio.com/static/frontend/images/backgrounds/noise.png');
 }
 
 ion-header > * {
@@ -587,6 +589,14 @@ ion-card {
       font-size: 1.5em;
     }
   }
+
+  ion-label {
+    min-height: 300px;
+    ion-icon {
+      color:#C8102E;
+      font-size: 120px;
+    }
+  }
 }
 
 .primary {
@@ -637,7 +647,7 @@ ion-card {
 
 .headline-content {
   ion-title * {
-    color: #232323 !important;
+    color: #fff; // #232323 !important;
     font-weight: 900 !important;
   }
 }
@@ -683,8 +693,17 @@ app-home, app-auth, app-support, app-dashboard {
   }
 
   ion-content {
-    --ion-background-color: #FAF7F2;
-    /* --ion-item-background: #fff; */
+    /* --ion-background-color: #FAF7F2; */
+    --ion-item-background: none !important;
+    --ion-card-background: none !important;
+
+    //--ion-background-image: url('https://cdn.merixstudio.com/static/frontend/images/backgrounds/noise.png')
+
+    --background: none;
+  background-image: url('https://cdn.merixstudio.com/static/frontend/images/backgrounds/noise.png');
+  //background-position: center center;
+  background-repeat: repeat;
+  //background-size: cover;
 
     > * {
       max-width: 1920px;
@@ -762,20 +781,58 @@ ion-header {
 
 ion-title {
   min-height: 55px;
-  font-family: Montserrat,sans-serif !important;
+  // font-family: Montserrat,sans-serif !important;
+  font-family: "Pontiac", Arial, Helvetica, sans-serif !important;
+
 }
+
 
 ion-input {
   padding: 5.5px;
+  background-color: #E8F0FE !important;
+  color: #434343;
 }
+
 
 ion-text {
   word-wrap: break-word !important;
   white-space: normal !important;
   
-  font-family: Montserrat,sans-serif !important;
+  // font-family: Montserrat,sans-serif !important;
+  font-family: "Pontiac", Arial, Helvetica, sans-serif !important;
+  
+  color: #fff;
 }
 
+h2 {
+  
+  color: #fff;
+}
+
+ion-label {
+  
+  ion-text {
+    @media (min-width: 1023px) {
+
+      font-size: 23px;
+      color: #fff;
+      
+    }
+  }
+  // font-family: Montserrat,sans-serif !important;
+  font-family: "Pontiac", Arial, Helvetica, sans-serif !important;
+}
 .no-bcg {
   background: transparent !important;
+}
+
+.slide {
+  background: none;
+}
+ion-slides {
+  background: transparent !important;
+}
+
+.pointer {
+  cursor: pointer;
 }

@@ -1,5 +1,11 @@
 ion-title {
     padding: 0;
+
+    color: #fff;
+
+    ion-text {
+        color: #fff;
+    }
 }
 
 .right {
@@ -23,4 +29,15 @@ ion-title {
         
         width: 50% !important;
     }
+}
+
+ion-card {
+    display: flex;
+    flex-direction: column;
+
+    gap: 40px;
+}
+
+ion-col {
+    padding: 40px 20px;
 }

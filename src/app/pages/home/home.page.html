@@ -8,12 +8,23 @@
 
 <ion-content [fullscreen]="true">
 
-<section class="dashboard">
+<section class="dashboard ion-items-center">
 
+  <ion-title class="ion-text-center extra-bold">
+    Bespoke software development
+  </ion-title>
 
+  <ion-label class="auth pointer" [routerLink]="'/login'">
+    <ion-icon name="log-in-outline"></ion-icon>
+    <ion-title>
+      Log in
+    </ion-title>
+  </ion-label>
+<!-- 
   <app-circular-button [props]="projectButton"></app-circular-button>
   <app-circular-button [props]="companyButton" [routerLink]="'/login'"></app-circular-button>
-
+ -->
+<!--  
   <ion-list class="dashboard__welcome">
 
     <ion-title class="weight-bold brand-title">
@@ -22,9 +33,9 @@
       <ion-text color="secondary">Vest Software</ion-text>
     </ion-title>
     <ion-toolbar>
-
+ -->
       <!-- <ion-text class="weight-bold">We provide custom software <br/> by architecting interactive cross-platform applications</ion-text> -->
-
+<!-- 
       <ion-text>
         Bespoke software development
       </ion-text>
@@ -32,7 +43,7 @@
     </ion-toolbar>
   
   </ion-list>
-  
+ -->  
   <ion-list class="icon-list">
   
     <app-icon-group *ngFor="let element of iconsDashboard" [props]="element"></app-icon-group>
@@ -62,6 +73,12 @@
   <!-- </ion-list> -->
 </section>
 
+<section class="headline-content ion-items-center">
+  
+  <ion-label class="ion-items-center">
+    <ion-icon name="chevron-down-outline" class="pointer"></ion-icon>
+  </ion-label>
+</section>
 <section class="slider">
       <div class="slide">
         <ion-card>
