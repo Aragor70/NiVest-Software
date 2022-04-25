@@ -10,8 +10,10 @@
 
 <section class="dashboard ion-items-center">
 
-  <ion-title class="ion-text-center extra-bold">
-    Bespoke software development
+  <ion-title class="ion-text-center">
+    <ion-text class="extra-bold">
+      Bespoke software development
+    </ion-text>
   </ion-title>
 
   <ion-label class="auth pointer" [routerLink]="'/login'">
@@ -76,7 +78,7 @@
 <section class="headline-content ion-items-center">
   
   <ion-label class="ion-items-center">
-    <ion-icon name="chevron-down-outline" class="pointer"></ion-icon>
+    <ion-icon (click)="scroll('.slider')" name="chevron-down-outline" class="pointer"></ion-icon>
   </ion-label>
 </section>
 <section class="slider">

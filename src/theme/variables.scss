@@ -407,6 +407,8 @@ ion-header
   background-image: url('https://cdn.merixstudio.com/static/frontend/images/backgrounds/noise.png');
 }
 
+/* https://ui-aurora-cdn.nyc3.cdn.digitaloceanspaces.com/aurora/assets/images/dbaas-hero-bg-9f63f24e4183db84a01e1d8f97044b2c.png */
+/* https://images.prismic.io/www-static/4b42ce9a-46ac-4146-a43b-2d0bc6aaa1dc_bg-solutions-managed-services.jpg?auto=compress,format */
 ion-header > * {
   height: 100%;
 
@@ -795,6 +797,15 @@ ion-input {
 
 
 ion-text {
+  word-wrap: break-word !important;
+  white-space: normal !important;
+  
+  // font-family: Montserrat,sans-serif !important;
+  font-family: "Pontiac", Arial, Helvetica, sans-serif !important;
+  
+  color: #fff;
+}
+ion-title {
   word-wrap: break-word !important;
   white-space: normal !important;
   
